@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -33,7 +32,7 @@
             <h2 class="animated fadeInDown">PAGE NOT FOUND.</h2>
             <p class="description animated fadeInUp">We Couldn't Find This Page</p>
         </div>
-        <a href="profile.html" class="return-btn"><i class="fa fa-home"></i>Home</a>
+        <a href="profile.jsp" class="return-btn"><i class="fa fa-home"></i>Home</a>
     </section>
 </div>
 </body>

@@ -4,8 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  
+
   <welcome-file-list>
+<<<<<<< HEAD
     <welcome-file>hello</welcome-file>
+=======
+    <welcome-file>mumsm/index.jsp</welcome-file>
+>>>>>>> 55bb5f77ebfc6d37af43ea0d2d7d64986de7ab85
   </welcome-file-list>
 </web-app>

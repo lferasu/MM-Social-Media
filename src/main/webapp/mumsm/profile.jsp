@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -37,7 +36,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.jsp">
 
                 <b>Clean-Note</b>
             </a>
@@ -57,32 +56,32 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li class="active">
-                    <a href="profile.html">
+                    <a href="profile.jsp">
                         Hillary McBrewk
                         <img src="img/Friends/woman-1.jpg" class="img-nav">
                     </a>
                 </li>
-                <li><a href="home.html"><i class="fa fa-bars"></i>&nbsp;Home</a></li>
-                <li><a href="messages.html"><i class="fa fa-comments"></i></a></li>
+                <li><a href="home.jsp"><i class="fa fa-bars"></i>&nbsp;Home</a></li>
+                <li><a href="messages.jsp"><i class="fa fa-comments"></i></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  Pages
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="recover_password.html">Recover password</a></li>
-                        <li><a href="list_users.html">List users</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                        <li><a href="friends.html">Friends</a></li>
-                        <li><a href="people_directory.html">User directory</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="edit_profile.html">Edit profile</a></li>
-                        <li><a href="notifications.html">Notifications</a></li>
-                        <li><a href="blank-cover.html">Blank cover</a></li>
+                        <li><a href="recover_password.jsp">Recover password</a></li>
+                        <li><a href="list_users.jsp">List users</a></li>
+                        <li><a href="photos.jsp">Photos</a></li>
+                        <li><a href="friends.jsp">Friends</a></li>
+                        <li><a href="people_directory.jsp">User directory</a></li>
+                        <li><a href="about.jsp">About</a></li>
+                        <li><a href="edit_profile.jsp">Edit profile</a></li>
+                        <li><a href="notifications.jsp">Notifications</a></li>
+                        <li><a href="blank-cover.jsp">Blank cover</a></li>
 
-                        <li><a href="registration_email.html">Registration email</a></li>
-                        <li><a href="grid_posts.html">Grid posts</a></li>
-                        <li><a href="error404.html">Error 404</a></li>
-                        <li><a href="error500.html">Error 500</a></li>
+                        <li><a href="registration_email.jsp">Registration email</a></li>
+                        <li><a href="grid_posts.jsp">Grid posts</a></li>
+                        <li><a href="error404.jsp">Error 404</a></li>
+                        <li><a href="error500.jsp">Error 500</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>
@@ -106,11 +105,11 @@
                 <div class="profile-nav">
                     <div class="panel">
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="profile.html"> <i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="about.html"> <i class="fa fa-info-circle"></i> About</a></li>
-                            <li><a href="friends.html"> <i class="fa fa-users"></i> Friends</a></li>
-                            <li><a href="photos.html"> <i class="fa fa-file-image-o"></i> Photos</a></li>
-                            <li><a href="edit_profile.html"> <i class="fa fa-edit"></i> Edit profile</a></li>
+                            <li class="active"><a href="profile.jsp"> <i class="fa fa-user"></i> Profile</a></li>
+                            <li><a href="about.jsp"> <i class="fa fa-info-circle"></i> About</a></li>
+                            <li><a href="friends.jsp"> <i class="fa fa-users"></i> Friends</a></li>
+                            <li><a href="photos.jsp"> <i class="fa fa-file-image-o"></i> Photos</a></li>
+                            <li><a href="edit_profile.jsp"> <i class="fa fa-edit"></i> Edit profile</a></li>
                         </ul>
                     </div>
                 </div>
@@ -508,62 +507,62 @@
     <div class="list-group text-left">
         <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p>
         <p class="text-center chat-title">Online users</p>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/guy-2.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Jeferh Smith</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-times-circle absent-status"></i>
             <img src="img/Friends/woman-1.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Dapibus acatar</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/guy-3.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Antony andrew lobghi</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/woman-2.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Maria fernanda coronel</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/guy-4.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Markton contz</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-times-circle absent-status"></i>
             <img src="img/Friends/woman-3.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Martha creaw</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-times-circle absent-status"></i>
             <img src="img/Friends/woman-8.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Yira Cartmen</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/woman-4.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Jhoanath matew</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/woman-5.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Ryanah Haywofd</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/woman-9.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Linda palma</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/woman-10.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Andrea ramos</span>
         </a>
-        <a href="messages.html" class="list-group-item">
+        <a href="messages.jsp" class="list-group-item">
             <i class="fa fa-check-circle connected-status"></i>
             <img src="img/Friends/child-1.jpg" class="img-chat img-thumbnail">
             <span class="chat-user-name">Dora ty bluekl</span>
