@@ -14,4 +14,11 @@ public class Picture {
     @ManyToOne
     @JoinColumn(name="post_id", nullable=false)
     private Post post;
+
+    @OneToOne(mappedBy = "picture")
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name="advertisement_id", nullable=false)
+    private Advertisement advertisement;
 }
