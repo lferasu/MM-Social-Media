@@ -41,7 +41,7 @@
                             <input type="password" class="form-control input-underline input-lg" placeholder="Password">
                         </div>
                     </div>
-                    <a href="profile.html" class="btn btn-info btn-lg">Log in</a>
+                    <a href="profile.jsp" class="btn btn-info btn-lg">Log in</a>
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
 
@@ -67,57 +67,57 @@
                 <!-- some registered users -->
                 <div class="welcome-users-inner">
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/guy-3.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/woman-1.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/guy-2.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/woman-2.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/guy-5.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/woman-3.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/guy-8.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/woman-4.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/guy-9.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/woman-7.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="profile.html">
+                        <a href="profile.jsp">
                             <img src="img/Friends/woman-7.jpg" class="img-circle" />
                         </a>
                     </div>
