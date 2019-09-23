@@ -51,6 +51,12 @@ public class User {
         this.profilePicture = profilePicture;
     }
 
+    public User(String email, String userName, String password) {
+        this.email = email;
+        this.userName = userName;
+        this.password = password;
+    }
+
     public long getId() {
         return id;
     }

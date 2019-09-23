@@ -38,9 +38,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand" href="login.jsp">
 
-                <b>Clean-Note</b>
+                <b>MUM Social</b>
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
