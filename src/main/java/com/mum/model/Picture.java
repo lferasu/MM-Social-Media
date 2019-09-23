@@ -1,10 +1,11 @@
-package model;
+package com.mum.model;
 
 import javax.persistence.*;
 import java.sql.Blob;
 
 @Entity
 public class Picture {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

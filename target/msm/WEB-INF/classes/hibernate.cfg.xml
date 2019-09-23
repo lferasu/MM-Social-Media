@@ -15,6 +15,5 @@
         <mapping class="model.Advertisement"/>
         <mapping class="model.Post"/>
         <mapping class="model.Picture"/>
-        <mapping class="com.mum.model.User"/>
     </session-factory>
 </hibernate-configuration>
