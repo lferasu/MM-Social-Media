@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -42,6 +41,7 @@
                         </div>
                     </div>
                     <a href="mumsm/profile.jsp" class="btn btn-info btn-lg">Log in</a>
+
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
 

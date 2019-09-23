@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: user
-  Date: 9/22/2019
-  Time: 8:47 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -39,7 +32,7 @@
             <h2 class="animated fadeInRight">ooops!!</h2>
             <p class="description animated fadeInRight">SOMETHING WENT WRONG.</p>
         </div>
-        <a href="profile.html" class="return-btn"><i class="fa fa-home"></i>Home</a>
+        <a href="profile.jsp" class="return-btn"><i class="fa fa-home"></i>Home</a>
     </section>
 </div>
 </body>
