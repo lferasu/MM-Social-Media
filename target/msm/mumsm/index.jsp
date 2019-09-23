@@ -12,6 +12,7 @@
     <title>Clean-Note</title>
     <!-- Bootstrap core CSS -->
     <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mumsm/assets/css/errors.css" rel="stylesheet">
     <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">
     <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="mumsm/assets/css/timeline.css" rel="stylesheet">
@@ -45,20 +46,28 @@
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
 
-                <form role="form" class="frm hidden">
+                <form role="form" class="frm hidden" action = "register" method="post">
                     <div class="form-content">
                         <div class="form-group">
-                            <input type="text" class="form-control input-underline input-lg" placeholder="Email">
+                            <input type="text" name = "email"  id="register-email" class="form-control input-underline input-lg" placeholder="Email">
+                            <span class="login-error" id = "email-eror"></span>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control input-underline input-lg" placeholder="Username">
+                            <input type="text" name = "userName" id="register-userName" class="form-control input-underline input-lg" placeholder="Username">
+                            <span class="login-error" id = "userName-error"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control input-underline input-lg" placeholder="Password">
+                            <input type="password" name = "password" id="register-password" class="form-control input-underline input-lg" placeholder="Password">
+                            <span class="login-error" id = "password-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name = "confirmPassword" id="register-confirmPassword" class="form-control input-underline input-lg" placeholder="Confirm Password">
+                            <span class="login-error" id ="confirmPassword-error"></span>
                         </div>
                     </div>
                     <a href="#" class="btn btn-info btn-lg btn-frm">Log in</a>
-                    <button type="submit" class="btn btn-info btn-lg">Register</button>
+                    <a href="#" id ="what"> hello</a>
+                    <button type="submit" class="btn btn-info btn-lg" id = "registerButton">Register</button>
                 </form>
             </div>
         </div>
@@ -140,6 +149,8 @@
         </div>
     </div>
 </div>
+<%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--%>
+<script src="mumsm/assets/js/home-made.js" > </script>
 </body>
 </html>
 
