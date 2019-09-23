@@ -29,8 +29,8 @@
     <div class="login-page">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <img src="mumsm/img/prism.png">
-                <h1>Clean-Note </h1>
+                <img src="mumsm/img/prism2.png">
+                <h1>MUM Social Media </h1>
                 <form role="form" class="frm  animated fadeInRight">
                     <div class="form-content">
                         <div class="form-group">
@@ -126,16 +126,16 @@
         </div>
         <div class="row">
             <div class="container">
-                <p>
-                <div class="footer-links">
-                    <a href="#">Terms of Use</a> |
-                    <a href="#">Privacy Policy</a> |
-                    <a href="#">Developers</a> |
-                    <a href="#">Contact</a> |
-                    <a href="#">About</a>
-                </div>
-                Copyright &copy; Company - All rights reserved
-                </p>
+<%--                <p>--%>
+<%--                <div class="footer-links">--%>
+<%--                    <a href="#">Terms of Use</a> |--%>
+<%--                    <a href="#">Privacy Policy</a> |--%>
+<%--                    <a href="#">Developers</a> |--%>
+<%--                    <a href="#">Contact</a> |--%>
+<%--                    <a href="#">About</a>--%>
+<%--                </div>--%>
+                Copyright &copy; Surafel, Eden, Getaneh, Gizaw - All rights reserved
+<%--                </p>--%>
             </div>
         </div>
     </div>

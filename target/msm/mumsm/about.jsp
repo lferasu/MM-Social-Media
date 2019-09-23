@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -9,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="mumsm/img/favicon.png">
     <title>Clean-Note</title>
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/animate.min.css" rel="stylesheet">
-    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/timeline.css" rel="stylesheet">
-    <script src="assets/js/jquery.1.11.1.min.js"></script>
-    <script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">
+    <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="mumsm/assets/css/timeline.css" rel="stylesheet">
+    <script src="mumsm/assets/js/jquery.1.11.1.min.js"></script>
+    <script src="mumsm/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="mumsm/assets/js/custom.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -38,7 +37,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.jsp">
-                <b>Clean-Note</b>
+                <b>MUM Social Media</b>
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">

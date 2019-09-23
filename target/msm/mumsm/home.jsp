@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="mumsm/img/favicon.png">
     <title>MUM Social Media</title>
     <!-- Bootstrap core CSS -->
 <%--    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
