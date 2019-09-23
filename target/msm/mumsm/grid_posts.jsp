@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand" href="login.jsp">
                 <b>SonFlat</b>
             </a>
         </div>
