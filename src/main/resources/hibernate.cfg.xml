@@ -4,13 +4,17 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL55Dialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.username">myuser</property>
-        <property name="hibernate.connection.password">mypassword</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/websystique</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">mysql</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/msm</property>
+       <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
-        <property name="format_sql">false</property>
-        <mapping class="com.mum.mm-social-media.model.post"/>
+        <property name="format_sql">true</property>
+        <mapping class="com.mum.msm.model.User"/>
+        <mapping class="com.mum.msm.model.Advertisement"/>
+        <mapping class="com.mum.msm.model.Post"/>
+        <mapping class="com.mum.msm.model.Picture"/>
     </session-factory>
 </hibernate-configuration>

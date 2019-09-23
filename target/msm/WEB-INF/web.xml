@@ -6,6 +6,11 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <welcome-file-list>
+<<<<<<< HEAD
     <welcome-file>mumsm/login.jsp</welcome-file>
+=======
+
+    <welcome-file>mumsm/index.jsp</welcome-file>
+>>>>>>> 1f43b16435d51ddfd27860167b6347623a5b8086
   </welcome-file-list>
 </web-app>
