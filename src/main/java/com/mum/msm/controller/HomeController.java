@@ -14,5 +14,6 @@ public class HomeController extends HttpServlet {
         throws ServletException, IOException {
         response.setContentType("text/html");
         request.getRequestDispatcher("login.jsp").forward(request, response);
+
     }
 }

@@ -26,12 +26,10 @@ function validateUserName () {
 }
 
 function ajaxCheckUserNameDuplication() {
-
 }
 
 function registerButtonClicked() {
 
-    
     validateUserName();
     $(".login-error").empty();
     // check if email is entered
@@ -55,8 +53,7 @@ function registerButtonClicked() {
     }
     //check if confirm password is entered
 
-    if(!$("#register-confirmPassword").val())
-    {
+    if(!$("#register-confirmPassword").val()){
         $("#confirmPassword-error").text("please confirm password");
         return false;
     }

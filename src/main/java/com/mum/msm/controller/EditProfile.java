@@ -28,8 +28,6 @@ public class EditProfile extends HttpServlet {
         LocalDate birthDate = LocalDate.of(Integer.parseInt(dateStringArray[0]),Integer.parseInt(dateStringArray[1]),Integer.parseInt(dateStringArray[2]));
 
 
-
-
         UserDao userDao = new UserDao();
 
         User editUser = userDao.get(1).orElse(null);
@@ -57,8 +55,6 @@ public class EditProfile extends HttpServlet {
                 response.getWriter().write(e.getMessage());
             }
         }
-
-
 
         response.getWriter().write("Success");
 
