@@ -1,5 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<<<<<<< HEAD
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+=======
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+>>>>>>> a7250a1df0aa17e7681b2295044dbd81a6857e96
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,8 +77,12 @@
                             <input type="password" name="password" class="form-control input-underline input-lg" placeholder="Password">
                         </div>
                     </div>
+<<<<<<< HEAD
 <%--                    <a href="profile.jsp" class="btn btn-info btn-lg">Log in</a>--%>
                     <input type="submit" value="Log in" class="btn btn-info btn-lg">
+=======
+                    <a href="<c:out value="profile.jsp"></c:out>" class="btn btn-info btn-lg">Log in</a>
+>>>>>>> a7250a1df0aa17e7681b2295044dbd81a6857e96
 
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
@@ -110,57 +118,57 @@
                 <!-- some registered users -->
                 <div class="welcome-users-inner">
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-3.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-1.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-2.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-2.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-5.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-3.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-8.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-4.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-9.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-7.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="/profile.jsp">
                             <img src="mumsm/img/Friends/woman-7.jpg" class="img-circle" />
                         </a>
                     </div>

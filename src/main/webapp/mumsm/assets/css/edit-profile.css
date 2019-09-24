@@ -1,0 +1,43 @@
+.left-float
+{
+float: left;
+}
+
+.right-float
+{
+float: right;
+}
+
+.center-float{
+    clear: both;
+}
+
+#first-name,#occuption,#city
+{
+    grid-column: 2/4;
+}
+
+#last-name,#phone,#country
+{
+    grid-column: 5/7;
+}
+
+#birth-day
+{
+    grid-column: 2/5;
+}
+
+.left-float
+{
+    grid-column: 1/2;
+}
+
+#edit-profile-container{
+    padding: 5vw 5vh;
+    width: 100vh;
+    margin: auto;
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1vw;
+}

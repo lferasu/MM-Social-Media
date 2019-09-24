@@ -11,6 +11,7 @@
     <link rel="icon" href="/mumsm/img/favicon.png">
     <title>Clean-Note</title>
     <!-- Bootstrap core CSS -->
+<<<<<<< HEAD
 <%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">--%>
@@ -18,6 +19,7 @@
 <%--    <script src="mumsm/assets/js/jquery.1.11.1.min.js"></script>--%>
 <%--    <script src="mumsm/bootstrap-3.3.5/js/bootstrap.min.js"></script>--%>
 <%--    <script src="mumsm/assets/js/custom.js"></script>--%>
+    
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -26,6 +28,7 @@
         <%@ include file="mumsm/font-awesome-4.4.0/css/font-awesome.min.css"%>
         <%@ include file="mumsm/assets/css/timeline.css"%>
     </style>
+
     <script>
         <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>
         <%@ include file="mumsm/bootstrap-3.3.5/js/bootstrap.min.js" %>
@@ -37,6 +40,7 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body class="animated fadeIn">
 

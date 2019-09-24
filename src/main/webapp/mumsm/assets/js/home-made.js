@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 // $( document ).ready(function() {
 //     $("#registerButton").click(registerButtonClicked);
 //     $("#register-userName").change(validateUserName);
 //     alert("hello");
 // });
+=======
+$( document ).ready(function() {
+    $("#registerButton").click(registerButtonClicked);
+    $("#register-userName").change(validateUserName);
+});
+>>>>>>> a7250a1df0aa17e7681b2295044dbd81a6857e96
 
 
 
@@ -32,7 +39,7 @@ function ajaxCheckUserNameDuplication() {
 
 function registerButtonClicked() {
 
-    alert("register");
+    
     validateUserName();
     $(".login-error").empty();
     // check if email is entered
