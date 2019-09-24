@@ -32,7 +32,7 @@
     <div class="login-page">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <img src="/mumsm/img/mumlogo.png">
+                <img src="mumsm/img/mumlogo.png">
                 <h1>MUM Social </h1>
                 <form role="form" class="frm  animated fadeInRight">
                     <div class="form-content">
