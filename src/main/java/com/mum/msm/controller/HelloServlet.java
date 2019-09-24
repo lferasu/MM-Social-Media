@@ -37,8 +37,6 @@ public class HelloServlet extends HttpServlet {
         response.getWriter().write(returened.getFirstName());
 
 
-
-
     }
 
     private static class EntityManagerHolder {

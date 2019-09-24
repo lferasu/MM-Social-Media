@@ -31,6 +31,14 @@ public class UserDao implements Dao<User> {
         return Optional.ofNullable(entityManager.find(User.class, id));
     }
 
+    public List<User> findWithUserName(String uname) {
+        return entityManager.createQuery(
+                "SELECT c FROM User c WHERE c.userName LIKE :uname")
+                .setParameter("uname", uname)
+                .setMaxResults(1)
+                .getResultList();
+    }
+
     @Override
     public List<User> getAll() {
         Query query = entityManager.createQuery("SELECT e FROM User e");

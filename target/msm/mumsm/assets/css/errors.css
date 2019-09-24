@@ -69,3 +69,7 @@ body{
 a:hover{
     text-decoration:none;    
 }
+
+.login-error {
+    color: red;
+}
