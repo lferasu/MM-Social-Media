@@ -1,0 +1,14 @@
+com\mum\msm\model\User.class
+com\mum\msm\daoImpl\PostDao.class
+com\mum\msm\daoImpl\UserDao.class
+com\mum\msm\model\Post.class
+com\mum\msm\hibernate\Util.class
+com\mum\msm\model\Picture.class
+com\mum\msm\config\HibernatePersistenceUnitInfo.class
+com\mum\msm\config\JpaEntityManagerFactory.class
+com\mum\msm\controller\HelloServlet$EntityManagerHolder.class
+com\mum\msm\model\Advertisement.class
+com\mum\msm\daoImpl\AdvertisementDao.class
+com\mum\msm\controller\HomeController.class
+com\mum\msm\dao\Dao.class
+com\mum\msm\controller\HelloServlet.class

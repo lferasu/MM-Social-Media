@@ -11,13 +11,13 @@
     <link rel="icon" href="img/favicon.png">
     <title>MUM Social - Login</title>
     <!-- Bootstrap core CSS -->
-    <link href="<%=request.getContextPath()%>/mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/mumsm/assets/css/animate.min.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/mumsm/assets/css/timeline.css" rel="stylesheet">
-    <script src="<%=request.getContextPath()%>/mumsm/assets/js/jquery.1.11.1.min.js"></script>
-    <script src="<%=request.getContextPath()%>/mumsm/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-    <script src="<%=request.getContextPath()%>/mumsm/assets/js/custom.js"></script>
+    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">
+    <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="mumsm/assets/css/timeline.css" rel="stylesheet">
+    <script src="mumsm/assets/js/jquery.1.11.1.min.js"></script>
+    <script src="mumsm/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="mumsm/assets/js/custom.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -45,7 +45,7 @@
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
 
-                <form role="form" class="frm hidden">
+                <form role="form" class="frm hidden" method="post" action="mumsm/home.jsp">
                     <div class="form-content">
                         <div class="form-group">
                             <input type="text" class="form-control input-underline input-lg" placeholder="Email">
