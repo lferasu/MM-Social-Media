@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="d7403e34-e451-4746-8907-2c17bdb701ef">
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="849379cb-c57f-442d-ad0f-569702e5c0ef">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>Hibernate
 
-C:/Users/user/Desktop/WAP/Sepember 2019/Project/MM-Social-Media/src/main/resources/hibernate.cfg.xml</remarks>
+C:/Users/user/Desktop/WAP/Sepember 2019/wapproject/MM-Social-Media/src/main/resources/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/msm</jdbc-url>
       <driver-properties>
