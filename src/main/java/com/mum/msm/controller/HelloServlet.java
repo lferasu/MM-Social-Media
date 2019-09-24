@@ -35,8 +35,6 @@ public class HelloServlet extends HttpServlet {
         User returened = ud.get(1).orElse(null);
 
         response.getWriter().write(returened.getFirstName());
-
-
     }
 
     private static class EntityManagerHolder {

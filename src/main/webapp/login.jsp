@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +39,7 @@
     <%@ include file="mumsm/font-awesome-4.4.0/css/font-awesome.min.css"%>
     <%@ include file="mumsm/assets/css/timeline.css"%>
     </style>
+
 
 </head>
 <body class="welcome-page animated fadeIn">

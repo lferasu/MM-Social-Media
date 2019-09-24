@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +40,7 @@
     <%@ include file="mumsm/assets/css/timeline.css"%>
     </style>
 
+
 </head>
 <body class="welcome-page animated fadeIn">
 <div class="row row-welcome">
@@ -46,6 +48,7 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <img src="mumsm/img/mumlogo.png">
+                <img alt="logo" src="<html:rewrite page='/mumsm/img/mumlogo.png'/>" width="100%" height="20%"/>
                 <h1>MUM Social </h1>
                 <form role="form" class="frm  animated fadeInRight">
                     <div class="form-content">

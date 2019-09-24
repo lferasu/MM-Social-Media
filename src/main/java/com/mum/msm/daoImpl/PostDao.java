@@ -23,8 +23,6 @@ public class PostDao implements Dao<Post> {
                 new Class[]{User.class, Picture.class, Post.class, Advertisement.class}).getEntityManager();
     }
 
-
-
     @Override
     public Optional<Post> get(long id) {
         return Optional.ofNullable(entityManager.find(Post.class, id));
