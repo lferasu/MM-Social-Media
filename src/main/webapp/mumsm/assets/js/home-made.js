@@ -1,8 +1,8 @@
-$( document ).ready(function() {
-    $("#registerButton").click(registerButtonClicked);
-    $("#register-userName").change(validateUserName);
-    alert("hello");
-});
+// $( document ).ready(function() {
+//     $("#registerButton").click(registerButtonClicked);
+//     $("#register-userName").change(validateUserName);
+//     alert("hello");
+// });
 
 
 

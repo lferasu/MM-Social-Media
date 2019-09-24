@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,18 +46,35 @@
     <div class="login-page">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <img src="mumsm/img/mumlogo.png">
+
+<%--               <img src="msm/mumsm/img/mumlog.png">--%>
+<%--                <img src="mumsm/img/mumlogo.png">--%>
+                <img src="<%= request.getContextPath() %>/mumsm/img/mumlogo.png" />
+<%--                <img src="msm/mumsm/img/mumlogo.png">--%>
+<%--                <c:url value="/mumsm/img/mumlogo.png"/>--%>
+<%--                <h1>Abebe</h1>--%>
+<%--                <img src="abebe.jpg">--%>
+<%--                <img src='<c:url value="mumsm/img/mumlogo.png"></c:url>' />--%>
+<%--                <img src="<%= request.getContextPath() %>/msm/img/mumlogo.png" />--%>
+<%--                <img src='<%= request.getContextPath() + "/mumsm/img/mumlogo.png" %>' />--%>
+<%--                <c:out value='<img src="mumsm/img/mumlogo.png">'/>--%>
+
+<%--&lt;%&ndash;                <tools:img path="/images/foo.png"/>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <img src='<%@ include file="mumsm/img/mumlogo.png"%>' />&ndash;%&gt;--%>
+<%--                <c:import var="logo" url="/mumsm/img/mumlogo.png"/>--%>
+<%--                <c:out value="${logo}"/>--%>
                 <h1>MUM Social </h1>
-                <form role="form" class="frm  animated fadeInRight">
+                <form role="form" class="frm  animated fadeInRight" action="login" method="post">
                     <div class="form-content">
                         <div class="form-group">
-                            <input type="text" class="form-control input-underline input-lg" placeholder="Username">
+                            <input type="text" name="username" class="form-control input-underline input-lg" placeholder="Username">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control input-underline input-lg" placeholder="Password">
+                            <input type="password" name="password" class="form-control input-underline input-lg" placeholder="Password">
                         </div>
                     </div>
-                    <a href="mumsm/profile.jsp" class="btn btn-info btn-lg">Log in</a>
+<%--                    <a href="profile.jsp" class="btn btn-info btn-lg">Log in</a>--%>
+                    <input type="submit" value="Log in" class="btn btn-info btn-lg">
 
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
