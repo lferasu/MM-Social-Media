@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +57,7 @@
                             <input type="password" class="form-control input-underline input-lg" placeholder="Password">
                         </div>
                     </div>
-                    <a href="mumsm/profile.jsp" class="btn btn-info btn-lg">Log in</a>
+                    <a href="<c:out value="profile.jsp"></c:out>" class="btn btn-info btn-lg">Log in</a>
 
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
@@ -92,57 +93,57 @@
                 <!-- some registered users -->
                 <div class="welcome-users-inner">
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-3.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-1.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-2.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-2.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-5.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-3.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-8.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-4.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/guy-9.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="profile.jsp">
                             <img src="mumsm/img/Friends/woman-7.jpg" class="img-circle" />
                         </a>
                     </div>
                     <div class="welcome-user">
-                        <a href="mumsm/profile.jsp">
+                        <a href="/profile.jsp">
                             <img src="mumsm/img/Friends/woman-7.jpg" class="img-circle" />
                         </a>
                     </div>
