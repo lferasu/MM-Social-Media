@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +20,7 @@
 <%--    <script src="mumsm/assets/js/custom.js"></script>--%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
 <!--    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
     <![endif]-->
     <style>
@@ -67,7 +66,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="profile.jsp">
-                        Hillary McBrewk
+                        Home Page
                         <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
                     </a>
                 </li>
@@ -103,7 +102,7 @@
     <a href="#">
         <img src="mumsm/img/Friends/woman-1.jpg">
     </a>
-    <h1 class="profile-name">Hillary McBrewk</h1>
+    <h1 class="profile-name">Home Page</h1>
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 <!-- Timeline content -->

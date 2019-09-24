@@ -1,7 +1,6 @@
 $( document ).ready(function() {
     $("#registerButton").click(registerButtonClicked);
     $("#register-userName").change(validateUserName);
-    alert("hello");
 });
 
 
@@ -32,7 +31,7 @@ function ajaxCheckUserNameDuplication() {
 
 function registerButtonClicked() {
 
-    alert("register");
+    
     validateUserName();
     $(".login-error").empty();
     // check if email is entered
