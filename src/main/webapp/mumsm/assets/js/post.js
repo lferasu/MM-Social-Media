@@ -49,6 +49,8 @@ function showPostText(JsonPost) {
 
 }
 
+
+//posting status
 function postStatus(event) {
     event.stopPropagation();
     event.preventDefault();
