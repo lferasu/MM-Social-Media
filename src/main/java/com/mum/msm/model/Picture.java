@@ -12,25 +12,24 @@ public class Picture {
     private long id;
     private String image;
 
-//    @ManyToOne
-//    @JoinColumn(name="post_id", nullable=false)
-//    private Post post;
+    @ManyToOne
+    @JoinColumn(name="post_id", nullable=false)
+    private Post post;
 
 //    @OneToOne(mappedBy = "profilePicture")
 //    private User user;
 
-//    @ManyToOne
-//    @JoinColumn(name="advertisement_id", nullable=false)
-//    private Advertisement advertisement;
+    @ManyToOne
+    @JoinColumn(name="advertisement_id", nullable=false)
+    private Advertisement advertisement;
 
     public Picture() {
     }
 
     public Picture(String image) {
         this.image = image;
-//        this.post = post;
-//        this.user = user;
-//        this.advertisement = advertisement;
+        this.post = post;
+        this.advertisement = advertisement;
     }
 
     public long getId() {
@@ -49,27 +48,19 @@ public class Picture {
         this.image = image;
     }
 
-//    public Post getPost() {
-//        return post;
-//    }
-//
-//    public void setPost(Post post) {
-//        this.post = post;
-//    }
-//
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-//
-//    public Advertisement getAdvertisement() {
-//        return advertisement;
-//    }
-//
-//    public void setAdvertisement(Advertisement advertisement) {
-//        this.advertisement = advertisement;
-//    }
+    public Post getPost() {
+        return post;
+    }
+
+    public void setPost(Post post) {
+        this.post = post;
+    }
+
+    public Advertisement getAdvertisement() {
+        return advertisement;
+    }
+
+    public void setAdvertisement(Advertisement advertisement) {
+        this.advertisement = advertisement;
+    }
 }

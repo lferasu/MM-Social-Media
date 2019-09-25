@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "HelloServelt", urlPatterns = {"/login", "/profile"})
+@WebServlet(name = "HelloServelt", urlPatterns = {"/loginServlet"})
 public class LoginServlet extends HttpServlet {
     private String USERNAME = "Admin";
     private String PASSWORD = "admin";
@@ -79,7 +79,7 @@ public class LoginServlet extends HttpServlet {
             }
         else {
             response.setContentType("text/html");
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.jsp");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/login");
             out.println("<font color=red>Enter Correct Username and Password, Please!</font>");
             rd.include(request, response);
         }

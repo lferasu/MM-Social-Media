@@ -48,11 +48,11 @@
     <div class="login-page">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-<%--                <img src="msm/mumsm/img/mumlogo.png">--%>
-<%--                <img src="mumsm/img/mumlogo.png">--%>
-                <img src="<%= request.getContextPath() %>/mumsm/img/mumlogo.png">
-                <h1>MUM Social</h1>
-                <form role="form" class="frm  animated fadeInRight" action="login" method="post" >
+
+
+                <img src="<%= request.getContextPath() %>/mumsm/img/mumlogo.png" />
+                <h1>MUM Social </h1>
+                <form role="form" class="frm  animated fadeInRight" action="login" method="post">
 
                     <div class="form-content">
                         <div class="form-group">
@@ -71,7 +71,7 @@
                 </form>
 
                 <form role="form" class="frm hidden" action = "register" method="post">
-                                Hello
+
                     <div class="form-content">
                         <div class="form-group">
                             <input type="text" name = "email"  id="register-email" class="form-control input-underline input-lg" placeholder="Email">
