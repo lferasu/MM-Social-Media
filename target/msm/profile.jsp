@@ -9,13 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-<<<<<<< HEAD
+
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>Mum Social Media</title>
-=======
-    <link rel="icon" href="/mumsm/img/favicon.png">
-    <title>Clean-Note</title>
->>>>>>> e70c9fd217bca330beef6e180619843b87cb7b14
+
     <!-- Bootstrap core CSS -->
 <%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">--%>
@@ -61,11 +58,9 @@
             </button>
             <a class="navbar-brand" href="login.jsp">
 
-<<<<<<< HEAD
+
                 <b>Mum Social Media</b>
-=======
-                <b>MUM Social</b>
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
+
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">

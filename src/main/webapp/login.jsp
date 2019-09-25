@@ -1,8 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<<<<<<< HEAD
-=======
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
->>>>>>> e70c9fd217bca330beef6e180619843b87cb7b14
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,33 +48,12 @@
     <div class="login-page">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-<<<<<<< HEAD
 <%--                <img src="msm/mumsm/img/mumlogo.png">--%>
 <%--                <img src="mumsm/img/mumlogo.png">--%>
-                <img src="<%= request.getContextPath() %>mumsm/img/mumlogo.png">
+                <img src="<%= request.getContextPath() %>/mumsm/img/mumlogo.png">
                 <h1>MUM Social</h1>
                 <form role="form" class="frm  animated fadeInRight">
-=======
 
-<%--               <img src="msm/mumsm/img/mumlog.png">--%>
-<%--                <img src="mumsm/img/mumlogo.png">--%>
-                <img src="<%= request.getContextPath() %>/mumsm/img/mumlogo.png" />
-<%--                <img src="msm/mumsm/img/mumlogo.png">--%>
-<%--                <c:url value="/mumsm/img/mumlogo.png"/>--%>
-<%--                <h1>Abebe</h1>--%>
-<%--                <img src="abebe.jpg">--%>
-<%--                <img src='<c:url value="mumsm/img/mumlogo.png"></c:url>' />--%>
-<%--                <img src="<%= request.getContextPath() %>/msm/img/mumlogo.png" />--%>
-<%--                <img src='<%= request.getContextPath() + "/mumsm/img/mumlogo.png" %>' />--%>
-<%--                <c:out value='<img src="mumsm/img/mumlogo.png">'/>--%>
-
-<%--&lt;%&ndash;                <tools:img path="/images/foo.png"/>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <img src='<%@ include file="mumsm/img/mumlogo.png"%>' />&ndash;%&gt;--%>
-<%--                <c:import var="logo" url="/mumsm/img/mumlogo.png"/>--%>
-<%--                <c:out value="${logo}"/>--%>
-                <h1>MUM Social </h1>
-                <form role="form" class="frm  animated fadeInRight" action="login" method="post">
->>>>>>> e70c9fd217bca330beef6e180619843b87cb7b14
                     <div class="form-content">
                         <div class="form-group">
                             <input type="text" name="username" class="form-control input-underline input-lg" placeholder="Username">

@@ -20,14 +20,10 @@
 <%--    <script src="mumsm/assets/js/custom.js"></script>--%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-<<<<<<< HEAD
-!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-<!--    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <![endif]-->
-=======
+
 <%--<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->--%>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
+
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -85,13 +81,10 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="profile.jsp">
-<<<<<<< HEAD
+
                         Home Page
                         <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
-=======
-                        Hillary McBrewk
-                        <img src="mum/img/Friends/woman-1.jpg" class="img-nav">
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
+
                     </a>
                 </li>
                 <li class="active"><a href="home.jsp"><i class="fa fa-bars"></i>&nbsp;Home</a></li>

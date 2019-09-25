@@ -50,9 +50,6 @@ public class LoginFilterServlet implements Filter {
 //            rd.include(request, response);
 //        }
 
-
-
-
 //        response.setContentType("text/html");
 //        PrintWriter out = response.getWriter();
 //        out.print("filter is invoked before");

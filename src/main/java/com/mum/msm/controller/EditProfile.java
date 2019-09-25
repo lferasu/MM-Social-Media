@@ -23,7 +23,7 @@ import java.util.List;
 
 @WebServlet(name ="edit-profile", urlPatterns = {"/edit-profile"})
 public class EditProfile extends HttpServlet {
-    private final String UPLOAD_DIRECTORY = File.separator+"uploads";
+    private final String UPLOAD_DIRECTORY = "uploads";
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -57,30 +57,6 @@ public class EditProfile extends HttpServlet {
             request.setAttribute("message",
                     "Sorry this Servlet only handles file upload request");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         String fName =request.getAttribute("first-name").toString();
         String lName = request.getAttribute("last-name").toString();

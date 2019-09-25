@@ -1,14 +1,5 @@
 Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
-<<<<<<< HEAD
-<<<<<<< HEAD
 Built-By: eduke
 Build-Jdk: 1.8.0_201
-=======
-Built-By: user
-=======
-Built-By: stmamo
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
-Build-Jdk: 12.0.1
->>>>>>> e70c9fd217bca330beef6e180619843b87cb7b14
 
