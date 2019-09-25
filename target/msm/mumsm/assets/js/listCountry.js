@@ -16,6 +16,6 @@ $(document).ready(function () {
         ,"Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
     list.forEach(x => {
     $("#country").append(
-        $("<option>",{text : x},"</option"
-        );
+        $("<option>",{text : x},"option"
+        ))
 })});

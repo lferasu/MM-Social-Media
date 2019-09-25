@@ -25,7 +25,9 @@ import java.util.List;
 @WebServlet(name ="edit-profile", urlPatterns = {"/edit-profile"})
 @MultipartConfig
 public class EditProfile extends HttpServlet {
+
     private final String UPLOAD_DIRECTORY = "/WEB-INF/uploads";
+
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

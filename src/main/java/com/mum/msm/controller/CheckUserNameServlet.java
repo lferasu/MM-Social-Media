@@ -22,7 +22,7 @@ public class CheckUserNameServlet extends HttpServlet {
         // check if the username is taken
         List<User> newUser = userDao.findWithUserName(userName);
         response.setContentType("text");
-        if(newUser.size()!=0)
+            if(newUser.size()!=0)
         {
             response.getWriter().write("duplicate");
         }

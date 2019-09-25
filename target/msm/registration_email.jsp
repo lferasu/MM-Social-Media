@@ -136,7 +136,7 @@
                                                                 </tbody>
                                                             </table>
                                                             <div style="font-family: Arial, sans-serif; line-height: 20px; color: #444444; font-size: 13px;">
-                                                                <b style="color: #777777;">We are excited to have you join us in SONFLAT community</b>
+                                                                <b style="color: #777777;">We are excited to have you join us in our social media</b>
                                                                 <br> Please confirm your registration to continue
                                                             </div>
                                                         </td>
