@@ -1,14 +1,17 @@
 $(document).ready(function () {
     $("#post-button").click(postStatus);
+<<<<<<< HEAD
 
     // alert("hello welcome")
+=======
+>>>>>>> 8e87064dc1c0566233ec932f4e39d1e5133f35bf
 });
+
 
 
 
 function loadPost(JsonPost) {
 
-    alert("hello");
     let outerDiv = $("<div class=\"panel panel-white post panel-shadow post-container\"></div>");
     let postHeading = $("<div class=\"post-heading\"></div>");
     let profileImageContainer = $("<div class=\"pull-left image\"></div>");
@@ -23,28 +26,25 @@ function loadPost(JsonPost) {
 
 //
 
+    var attr = $(postImage).attr('src');
    postText.text(JsonPost.text);
    userName.text(JsonPost.user.userName);
 // create structure
     postDescriptionContainer.append(postText);
-    postImageContainer.append(postImage);
+    if(attr)
+    {
+        postImageContainer.append(postImage);
+    }
     userNameContainer.append(userNameTitle);
     userNameTitle.append(userName);
     profileImageContainer.append(profileImage);
-
-
     postHeading.append(profileImageContainer);
     postHeading.append(userNameContainer);
-
-
     outerDiv.append(postHeading);
     outerDiv.append(postImageContainer);
     outerDiv.append(postDescriptionContainer);
-    $("#posts").append(outerDiv);
+    $("#posts").prepend(outerDiv);
 }
-
-
-
 
 function showPostText(JsonPost) {
 

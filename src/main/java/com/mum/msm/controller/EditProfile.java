@@ -10,6 +10,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,8 +23,10 @@ import java.time.LocalDate;
 import java.util.List;
 
 @WebServlet(name ="edit-profile", urlPatterns = {"/edit-profile"})
+@MultipartConfig
 public class EditProfile extends HttpServlet {
-    private final String UPLOAD_DIRECTORY = File.separator+"uploads";
+    private final String UPLOAD_DIRECTORY = "/WEB-INF/uploads";
+
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -57,29 +60,6 @@ public class EditProfile extends HttpServlet {
             request.setAttribute("message",
                     "Sorry this Servlet only handles file upload request");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         String fName =request.getAttribute("first-name").toString();

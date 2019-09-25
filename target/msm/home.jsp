@@ -81,11 +81,17 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li>
+<<<<<<< HEAD
                     <a href="profile.jsp" class="nameOfUser">
 
 <%--                        Home Page--%>
 <%--                        <%= session.getAttribute("logggedInUser") %>--%>
 <%--                        <div class="nameOfUser">Hello Mrs</div>--%>
+=======
+                    <a href="profile.jsp">
+
+                        Home Page
+>>>>>>> 8e87064dc1c0566233ec932f4e39d1e5133f35bf
                         <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
 
                     </a>

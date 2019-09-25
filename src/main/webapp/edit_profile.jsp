@@ -150,7 +150,7 @@
         <input type="date" id="birth-day" name="birth-date">
 
        <input type ="submit" id="submitButton">
-        <input type ="reset">
+        <input type ="reset" id="reset">
     </div>
 </form>
 <!-- Timeline content -->
