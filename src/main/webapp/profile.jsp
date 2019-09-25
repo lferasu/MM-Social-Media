@@ -40,6 +40,7 @@
         <%@ include file="mumsm/assets/js/custom.js" %>
         <%@ include file="mumsm/assets/js/home-made.js" %>
         <%@ include file="mumsm/assets/js/post.js" %>
+        <%@ include file="mumsm/assets/js/profile.js" %>
     </script>
 
 
@@ -142,7 +143,7 @@
                         <h3 class="panel-title">Weather Service</h3>
                     </div>
                     <div class="panel-body">
-                        <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="Fairfield, IA" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/41d01n91d96/fairfield/" data-label_1="FAIRFIELD" data-label_2="WEATHER" data-theme="original" >FAIRFIELD WEATHER</a>
                         <script>
                             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
                         </script>
@@ -152,24 +153,20 @@
             <!-- right  content-->
             <div class="profile-info col-md-8  animated fadeInRight" id="full-container">
                 <div class="panel">
-                    <form>
+                    <form enctype="multipart/form-data">
                         <textarea placeholder="Whats in your mind today?" id = "post-text" rows="2" class="form-control input-lg p-text-area"></textarea>
-                    </form>
+
                     <div class="panel-footer">
                         <button class="btn btn-info pull-right" id ="post-button">Post</button>
-                        <ul class="nav nav-pills">
-                            <li>
-                                <a href="#"><i class="fa fa-map-marker"></i></a>
                                 <div id="image-frame">
                                     <img src="" id="profile-img-tag" width="200px" />
                                 </div>
                                 <div id ="image-select">
-                                    <input type="file" name="file" id="profile-img">
+                                    <input type="file"  name="file" id="profile-img">
                                 </div>
-                            </li>
 
-                        </ul>
                     </div>
+                    </form>
                 </div>
                 <!-- first post-->
                 <div id="posts">

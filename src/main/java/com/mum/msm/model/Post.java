@@ -1,6 +1,7 @@
 package com.mum.msm.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -11,15 +12,15 @@ public class Post {
     private long id;
     private String text;
 
-    @OneToMany(mappedBy="post")
-    private List<Picture> picture;
+
+    private String picture;
     private boolean enabled;
 
     @ManyToOne
     @JoinColumn(name="user_id", nullable=false)
     private User user;
 
-    public Post(String text, List<Picture> picture, boolean enabled, User user) {
+    public Post(String text, String picture, boolean enabled, User user) {
         this.text = text;
         this.picture = picture;
         this.enabled = enabled;
@@ -45,13 +46,14 @@ public class Post {
         this.text = text;
     }
 
-    public List<Picture> getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(List<Picture> picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
+
 
     public boolean isEnabled() {
         return enabled;
