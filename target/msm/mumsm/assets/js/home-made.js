@@ -5,20 +5,6 @@ $( document ).ready(function() {
     // $('#logout').click(logoutFunction);
 });
 
-// function logoutFunction() {
-//     $.ajax('LogoutServlet', {
-//         type: get,
-//         success: function () {
-//
-//         },
-//         error: function () {
-//
-//         }
-//     })
-//
-// }
-
-
 function validateUserName () {
     let userName = $("#register-userName").val() ;
     $.post("checkUserName",{

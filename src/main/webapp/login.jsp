@@ -52,7 +52,7 @@
 <%--                <img src="mumsm/img/mumlogo.png">--%>
                 <img src="<%= request.getContextPath() %>/mumsm/img/mumlogo.png">
                 <h1>MUM Social</h1>
-                <form role="form" class="frm  animated fadeInRight">
+                <form role="form" class="frm  animated fadeInRight" action="login" method="post" >
 
                     <div class="form-content">
                         <div class="form-group">

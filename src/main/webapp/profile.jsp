@@ -9,15 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-<<<<<<< HEAD
+
     <link rel="icon" href="/mumsm/img/favicon.png">
     <title>Home - MUM Social</title>
-=======
 
-    <link rel="icon" href="mumsm/img/favicon.png">
-    <title>Mum Social Media</title>
 
->>>>>>> 891a151c9caf0aa12f9369298cbb9a23330adc88
+
     <!-- Bootstrap core CSS -->
 <%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">--%>
