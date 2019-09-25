@@ -24,39 +24,23 @@ public class LoginFilterServlet implements Filter {
         HttpServletResponse res = (HttpServletResponse) response;
 
         String uri = req.getRequestURI();
-        this.context.log("Requested URL" + uri);
+//        this.context.log("Requested URL" + uri);
 
         HttpSession session = req.getSession(false);
 
-        if (session == null && !(uri.endsWith("jsp") || uri.endsWith("HomeServlet"))){
+        if (session == null && !(uri.endsWith("jsp") || uri.contains("servlet"))){
+
             this.context.log("Unauthorized access to MUM Social");
             response.setContentType("text/html");
             res.sendRedirect("login.jsp");
-        } else {
-            chain.doFilter(request, response);
+        } else if(uri.contains("login") || uri.contains("registration")){
+
+            res.sendRedirect("profile.jsp");
         }
 
-
-//        PrintWriter out=response.getWriter();
-//
-//        String password=request.getParameter("password");
-//        if(password.equals("admin")){
-//            chain.doFilter(request, response);
-//
-//        }
-//        else{
-//            out.print("username or password error!");
-//            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-//            rd.include(request, response);
-//        }
-
-//        response.setContentType("text/html");
-//        PrintWriter out = response.getWriter();
-//        out.print("filter is invoked before");
-//
-//        chain.doFilter(request,  response);//sends request to next resource
-//
-//        out.print("filter is invoked after");
+        else {
+            chain.doFilter(request, response);
+        }
 
     }
 }

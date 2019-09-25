@@ -19,9 +19,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "HelloServelt", urlPatterns = {"/hello", "login"})
+@WebServlet(name = "HelloServelt", urlPatterns = {"/login", "/profile"})
 public class LoginServlet extends HttpServlet {
-    private String USERNAME = "admin";
+    private String USERNAME = "Admin";
     private String PASSWORD = "admin";
     private String ADMIN_EMAIL = "admin@mumsm.com";
 
@@ -55,25 +55,27 @@ public class LoginServlet extends HttpServlet {
             }
         }
 
-
         if (USERNAME.equals(username) && PASSWORD.equals(password)){
             response.setContentType("text/html");
             User admin = new User(ADMIN_EMAIL, USERNAME, PASSWORD);
+            String adminUsername = admin.getUserName();
 //            out.println("Welcome Admin!");
             session.setAttribute("welcome", "Welcome, ");
             session.setAttribute("logggedInUser", admin);
+            session.setAttribute("logggedInUserName", adminUsername);
             Cookie user = new Cookie("user", username);
             response.addCookie(user);
-            response.sendRedirect("profile.jsp");
+            response.sendRedirect("home.jsp");
 
         } else if (theUser != null) {
                 response.setContentType("text/html");
-                User logggedInUser = new User(theUser.getEmail(), theUser.getUserName(), theUser.getPassword());
+//                User logggedInUser = new User(theUser.getEmail(), theUser.getUserName(), theUser.getPassword());
                 session.setAttribute("welcome", "Welcome, ");
-                session.setAttribute("logggedInUser", logggedInUser);
+                session.setAttribute("logggedInUser", theUser);
+                session.setAttribute("logggedInUserName", theUser.getFirstName());
                 Cookie user = new Cookie("user", username);
                 response.addCookie(user);
-                response.sendRedirect("profile.jsp");
+                response.sendRedirect("home.jsp");
             }
         else {
             response.setContentType("text/html");

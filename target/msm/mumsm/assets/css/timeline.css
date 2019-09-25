@@ -1096,6 +1096,21 @@ div.about-tab div.about-tab-content:not(.active){
     z-index: 999;    
     overflow-y: auto;
 }
+.advert {
+    /*background-color: red;*/
+    color: #3CA2E0;
+    position: fixed;
+    top: 51px;
+    right: 0%;
+    float: right;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    height: 95%;
+    width: 210px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 0px 3px 0px rgba(160, 160, 160, 0.30);
+}
 
 .chat-sidebar.focus {
     right: 0px;
