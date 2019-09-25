@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="mumsm/img/favicon.png">
-    <title>SonFlat</title>
+    <title>Mum Social Media</title>
     <!-- Bootstrap core CSS -->
     <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">

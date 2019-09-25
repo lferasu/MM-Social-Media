@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +20,14 @@
 <%--    <script src="mumsm/assets/js/custom.js"></script>--%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+<<<<<<< HEAD
+!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
 <!--    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
     <![endif]-->
+=======
+<%--<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->--%>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+>>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -31,7 +35,21 @@
         <%@ include file="mumsm/assets/css/animate.min.css"%>
         <%@ include file="mumsm/font-awesome-4.4.0/css/font-awesome.min.css"%>
         <%@ include file="mumsm/assets/css/timeline.css"%>
+        p{
+            size :32px;
+            color : red;
+
+        }
     </style>
+    <script>
+        <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>
+        <%@ include file="mumsm/bootstrap-3.3.5/js/bootstrap.min.js" %>
+        <%@ include file="mumsm/assets/js/custom.js" %>
+        <%@ include file="mumsm/assets/js/home-made.js" %>
+        <%@ include file="mumsm/assets/js/post.js" %>
+    </script>
+
+
 </head>
 <body class="animated fadeIn">
 <h1>Hello mum</h1>
@@ -67,8 +85,13 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="profile.jsp">
-                        Hillary McBrewk
+<<<<<<< HEAD
+                        Home Page
                         <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
+=======
+                        Hillary McBrewk
+                        <img src="mum/img/Friends/woman-1.jpg" class="img-nav">
+>>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
                     </a>
                 </li>
                 <li class="active"><a href="home.jsp"><i class="fa fa-bars"></i>&nbsp;Home</a></li>
@@ -103,7 +126,7 @@
     <a href="#">
         <img src="mumsm/img/Friends/woman-1.jpg">
     </a>
-    <h1 class="profile-name">Hillary McBrewk</h1>
+    <h1 class="profile-name">Home Page</h1>
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 <!-- Timeline content -->
@@ -121,7 +144,7 @@
                         <div class="notification-row">
                             <div class="notification-padding">
                                 <div class="sidebar-fa-image">
-                                    <img class="notifications" src="mumsm/img/Friends/guy-2.jpg">
+                                    <img class="notifications" src="msm/img/Friends/guy-2.jpg">
                                 </div>
                                 <div class="sidebar-fa-text">
                                     <b><a href="#">Carlos marthur</a></b> reviewed a
@@ -133,7 +156,7 @@
                         <div class="notification-row">
                             <div class="notification-padding">
                                 <div class="sidebar-fa-image">
-                                    <img class="notifications" src="mumsm/img/Friends/woman-2.jpg">
+                                    <img class="notifications" src="msm/img/Friends/woman-2.jpg">
                                 </div>
                                 <div class="sidebar-fa-text">
                                     <b><a href="#">Hillary Markston</a></b> shared a
@@ -145,7 +168,7 @@
                         <div class="notification-row">
                             <div class="notification-padding">
                                 <div class="sidebar-fa-image">
-                                    <img class="notifications" src="mumsm/img/Friends/woman-3.jpg">
+                                    <img class="notifications" src="msm/img/Friends/woman-3.jpg">
                                 </div>
                                 <div class="sidebar-fa-text">
                                     <b><a href="#">Leidy marshel</a></b> shared a
@@ -157,7 +180,7 @@
                         <div class="notification-row">
                             <div class="notification-padding">
                                 <div class="sidebar-fa-image">
-                                    <img class="notifications" src="mumsm/img/Friends/woman-4.jpg">
+                                    <img class="notifications" src="msm/img/Friends/woman-4.jpg">
                                 </div>
                                 <div class="sidebar-fa-text">
                                     <b><a href="#">Presilla bo</a></b> shared a
@@ -169,7 +192,7 @@
                         <div class="notification-row">
                             <div class="notification-padding">
                                 <div class="sidebar-fa-image">
-                                    <img class="notifications" src="mumsm/img/Friends/woman-4.jpg">
+                                    <img class="notifications" src="msm/img/Friends/woman-4.jpg">
                                 </div>
                                 <div class="sidebar-fa-text">
                                     <b><a href="#">Martha markguy</a></b> shared a
@@ -260,10 +283,10 @@
             <div class="profile-info col-md-8  animated fadeInRight">
                 <div class="panel">
                     <form>
-                        <textarea placeholder="Whats in your mind today?" rows="2" class="form-control input-lg p-text-area"></textarea>
+                        <textarea placeholder="Whats in your mind today?" id = "post-text" rows="2" class="form-control input-lg p-text-area"></textarea>
                     </form>
                     <div class="panel-footer">
-                        <button class="btn btn-info pull-right">Post</button>
+                        <button class="btn btn-info pull-right" id ="post-button">Post</button>
                         <ul class="nav nav-pills">
                             <li>
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
@@ -281,228 +304,32 @@
                     </div>
                 </div>
                 <!-- first post-->
-                <div class="panel panel-white post panel-shadow">
-                    <div class="post-heading">
-                        <div class="pull-left image">
-                            <img src="mumsm/img/Friends/guy-2.jpg" class="avatar" alt="user profile image">
-                        </div>
-                        <div class="pull-left meta">
-                            <div class="title h5">
-                                <a href="#" class="post-user-name">Omarion welkdic</a>
-                                uploaded a photo.
+                <div id="posts">
+                    <div class="panel panel-white post panel-shadow post-container" >
+                        <div class="post-heading">
+                            <div class="pull-left image">
+                                <img src="mumsm/img/Friends/guy-2.jpg" class="avatar" alt="user profile image">
                             </div>
-                            <h6 class="text-muted time">5 seconds ago</h6>
-                        </div>
-                    </div>
-                    <div class="post-image">
-                        <img src="mumsm/img/Post/game.jpg" class="image show-in-modal" alt="image post">
-                    </div>
-                    <div class="post-description">
-                        <p>This is a short description</p>
-                        <div class="stats">
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-thumbs-up icon"></i>228
-                            </a>
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-retweet icon"></i>128
-                            </a>
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-comments-o icon"></i>3
-                            </a>
-                        </div>
-                    </div>
-                    <div class="post-footer">
-                        <input class="form-control add-comment-input" placeholder="Add a comment..." type="text">
-                        <ul class="comments-list">
-                            <li class="comment">
-                                <a class="pull-left" href="#">
-                                    <img class="avatar" src="mumsm/img/Friends/guy-3.jpg" alt="avatar">
-                                </a>
-                                <div class="comment-body">
-                                    <div class="comment-heading">
-                                        <h4 class="comment-user-name"><a href="#">Antony andrew lobghi</a></h4>
-                                        <h5 class="time">7 minutes ago</h5>
-                                    </div>
-                                    <p>This is a comment bla bla bla</p>
+                            <div class="pull-left meta">
+                                <div class="title h5">
+                                    <a href="#" class="post-user-name">Omarion welkdic</a>
+                                    uploaded a photo.
                                 </div>
-                            </li>
-                            <li class="comment">
-                                <a class="pull-left" href="#">
-                                    <img class="avatar" src="mumsm/img/Friends/guy-2.jpg" alt="avatar">
-                                </a>
-                                <div class="comment-body">
-                                    <div class="comment-heading">
-                                        <h4 class="comment-user-name"><a href="#">Jeferh Smith</a></h4>
-                                        <h5 class="time">3 minutes ago</h5>
-                                    </div>
-                                    <p>This is another comment bla bla bla</p>
-                                </div>
-                            </li>
-                            <li class="comment">
-                                <a class="pull-left" href="#">
-                                    <img class="avatar" src="mumsm/img/Friends/woman-2.jpg" alt="avatar">
-                                </a>
-                                <div class="comment-body">
-                                    <div class="comment-heading">
-                                        <h4 class="comment-user-name"><a href="#">Maria fernanda coronel</a></h4>
-                                        <h5 class="time">10 seconds ago</h5>
-                                    </div>
-                                    <p>Wow! so cool my friend</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- first post-->
-                <!-- second post -->
-                <div class="panel panel-white post panel-shadow">
-                    <div class="post-heading">
-                        <div class="pull-left image">
-                            <img src="mumsm/img/Friends/woman-1.jpg" class="avatar" alt="user profile image">
-                        </div>
-                        <div class="pull-left meta">
-                            <div class="title h5">
-                                <a href="#" class="post-user-name">Hillary McBrewk</a>
-                                made a post.
                             </div>
-                            <h6 class="text-muted time">1 minute ago</h6>
                         </div>
-                    </div>
-                    <div class="post-description">
-                        <p>Bootdey is a gallery of free snippets resources templates and utilities
-                            for bootstrap css hmtl js framework. Codes for developers and web designers</p>
-                        <div class="stats">
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-thumbs-up icon"></i>2
-                            </a>
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-retweet icon"></i>12
-                            </a>
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-comments-o icon"></i>3
-                            </a>
+                        <div class="post-image">
+                            <img src="mumsm/img/Post/game.jpg" class="image show-in-modal" alt="image post">
                         </div>
-                    </div>
-                    <div class="post-footer">
-                        <input class="form-control add-comment-input" placeholder="Add a comment..." type="text">
-                        <ul class="comments-list">
-                            <li class="comment">
-                                <a class="pull-left" href="#">
-                                    <img class="avatar" src="mumsm/img/Friends/guy-8.jpg" alt="avatar">
-                                </a>
-                                <div class="comment-body">
-                                    <div class="comment-heading">
-                                        <h4 class="comment-user-name"><a href="#">Gavhin dahg martb</a></h4>
-                                        <h5 class="time">5 minutes ago</h5>
-                                    </div>
-                                    <p>This is a first comment</p>
-                                </div>
-                                <ul class="comments-list">
-                                    <li class="comment">
-                                        <a class="pull-left" href="#">
-                                            <img class="avatar" src="mumsm/img/Friends/woman-5.jpg" alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="comment-user-name"><a href="#">Ryanah Haywofd</a></h4>
-                                                <h5 class="time">3 minutes ago</h5>
-                                            </div>
-                                            <p>Relax my friend</p>
-                                        </div>
-                                    </li>
-                                    <li class="comment">
-                                        <a class="pull-left" href="#">
-                                            <img class="avatar" src="mumsm/img/Friends/woman-7.jpg" alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="comment-user-name"><a href="#">Maria dh heart</a></h4>
-                                                <h5 class="time">3 minutes ago</h5>
-                                            </div>
-                                            <p>Ok, cool.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- end second post -->
-                <!-- third post -->
-                <div class="panel panel-white post panel-shadow">
-                    <div class="post-heading">
-                        <div class="pull-left image">
-                            <img src="mumsm/img/Friends/woman-1.jpg" class="avatar" alt="user profile image">
+                        <div class="post-description">
+                            <p>This is a short description</p>
                         </div>
-                        <div class="pull-left meta">
-                            <div class="title h5">
-                                <a href="#" class="post-user-name">Hillary McBrewk</a>
-                                made a post.
-                            </div>
-                            <h6 class="text-muted time">1 minute ago</h6>
-                        </div>
-                    </div>
-                    <div class="post-image">
-                        <img src="mumsm/img/Post/young-couple-in-love.jpg" class="image show-in-modal" alt="image post">
-                    </div>
-                    <div class="post-description">
-                        <p>This is my new awesome photo, ok relax with my style, so cray</p>
-                        <div class="stats">
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-thumbs-up icon"></i>2
-                            </a>
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-retweet icon"></i>12
-                            </a>
-                            <a href="#" class="stat-item">
-                                <i class="fa fa-comments-o icon"></i>3
-                            </a>
-                        </div>
-                    </div>
-                    <div class="post-footer">
-                        <input class="form-control add-comment-input" placeholder="Add a comment..." type="text">
-                        <ul class="comments-list">
-                            <li class="comment">
-                                <a class="pull-left" href="#">
-                                    <img class="avatar" src="mumsm/img/Friends/guy-8.jpg" alt="avatar">
-                                </a>
-                                <div class="comment-body">
-                                    <div class="comment-heading">
-                                        <h4 class="comment-user-name"><a href="#">Gavhin dahg martb</a></h4>
-                                        <h5 class="time">5 minutes ago</h5>
-                                    </div>
-                                    <p>This is a first comment</p>
-                                </div>
-                                <ul class="comments-list">
-                                    <li class="comment">
-                                        <a class="pull-left" href="#">
-                                            <img class="avatar" src="mumsm/img/Friends/woman-5.jpg" alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="comment-user-name"><a href="#">Ryanah Haywofd</a></h4>
-                                                <h5 class="time">3 minutes ago</h5>
-                                            </div>
-                                            <p>Relax my friend</p>
-                                        </div>
-                                    </li>
-                                    <li class="comment">
-                                        <a class="pull-left" href="#">
-                                            <img class="avatar" src="mumsm/img/Friends/woman-7.jpg" alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="comment-user-name"><a href="#">Maria dh heart</a></h4>
-                                                <h5 class="time">3 minutes ago</h5>
-                                            </div>
-                                            <p>Ok, cool.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- end third post -->
+
+<%--                    </div>--%>
+
+                </div>
+
                 <div class="panel panel-white post-load-more panel-shadow text-center">
-                    <button class="btn btn-info">
+                    <button class="btn btn-info" id ="load-more">
                         <i class="fa fa-refresh"></i>Load More...
                     </button>
                 </div>
