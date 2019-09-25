@@ -36,7 +36,7 @@ public class RegisterServlet extends HttpServlet {
             userDao.save(user);
             Cookie users = new Cookie("user", userName);
             response.addCookie(users);
-            response.sendRedirect("profile.jsp");
+            response.sendRedirect("edit_profile.jsp");
         }
 
     }

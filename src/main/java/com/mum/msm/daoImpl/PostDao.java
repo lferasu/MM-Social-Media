@@ -20,7 +20,7 @@ public class PostDao implements Dao<Post> {
     public PostDao()
     {
         entityManager =  new JpaEntityManagerFactory(
-                new Class[]{User.class, Picture.class, Post.class, Advertisement.class}).getEntityManager();
+                new Class[]{User.class, Post.class}).getEntityManager();
     }
 
     @Override

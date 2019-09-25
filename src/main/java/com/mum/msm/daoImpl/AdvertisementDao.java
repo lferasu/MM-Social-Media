@@ -20,10 +20,8 @@ public class AdvertisementDao implements Dao<Advertisement> {
     public AdvertisementDao()
     {
         entityManager =  new JpaEntityManagerFactory(
-                new Class[]{User.class, Picture.class, Post.class, Advertisement.class}).getEntityManager();
+                new Class[]{ Advertisement.class}).getEntityManager();
     }
-
-
 
     @Override
     public Optional<Advertisement> get(long id) {

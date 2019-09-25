@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <a href="#" class="btn btn-info btn-lg btn-frm">Log in</a>
-                    <a href="#" id ="what"> hello</a>
+                    <a href="#" id ="what">    </a>
                     <button type="submit" class="btn btn-info btn-lg" id = "registerButton">Register</button>
                 </form>
             </div>
