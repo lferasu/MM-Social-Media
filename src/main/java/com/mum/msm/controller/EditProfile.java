@@ -61,6 +61,7 @@ public class EditProfile extends HttpServlet {
                     "Sorry this Servlet only handles file upload request");
         }
 
+
         String fName =request.getAttribute("first-name").toString();
         String lName = request.getAttribute("last-name").toString();
         String phone = request.getAttribute("phone").toString();
@@ -100,8 +101,6 @@ public class EditProfile extends HttpServlet {
                 response.getWriter().write(e.getMessage());
             }
         }
-
-
 
         response.getWriter().write("Success");
 

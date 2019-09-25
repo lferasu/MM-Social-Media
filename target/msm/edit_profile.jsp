@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="mumsm/img/favicon.png">
-    <title>Clean-Note</title>
+    <title>Mum Social Media</title>
     <!-- Bootstrap core CSS -->
     <script>
         <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="login.jsp">
-                <b>Clean-Note</b>
+                <b>Mum Social Media</b>
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">

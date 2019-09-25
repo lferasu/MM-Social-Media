@@ -24,15 +24,24 @@ public class LoginFilterServlet implements Filter {
         HttpServletResponse res = (HttpServletResponse) response;
 
         String uri = req.getRequestURI();
-        this.context.log("Requested URL" + uri);
+//        this.context.log("Requested URL" + uri);
 
         HttpSession session = req.getSession(false);
 
-        if (session == null && !(uri.endsWith("jsp") || uri.endsWith("HomeServlet"))){
+        if (session == null && !(uri.endsWith("jsp") || uri.contains("servlet"))){
+
             this.context.log("Unauthorized access to MUM Social");
             response.setContentType("text/html");
             res.sendRedirect("login.jsp");
-        } else {
+        } else if(uri.contains("login") || uri.contains("registration")){
+//            RequestDispatcher rd = req.getRequestDispatcher("/login");
+//            rd.forward(req, res);
+
+//            response.setContentType("text/html");
+            res.sendRedirect("profile.jsp");
+        }
+
+        else {
             chain.doFilter(request, response);
         }
 
@@ -51,15 +60,6 @@ public class LoginFilterServlet implements Filter {
 //        }
 
 
-
-
-//        response.setContentType("text/html");
-//        PrintWriter out = response.getWriter();
-//        out.print("filter is invoked before");
-//
-//        chain.doFilter(request,  response);//sends request to next resource
-//
-//        out.print("filter is invoked after");
 
     }
 }
