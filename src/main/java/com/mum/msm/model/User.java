@@ -24,18 +24,14 @@ public class User {
     private String password;
     private boolean blocked;
 
-    @OneToMany(mappedBy="user")
-    private List<Post> post;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "profile_picture_id", referencedColumnName = "id")
-    private Picture profilePicture;
+    private String profilePicture;
 
     public User() {
     }
 
 
-    public User(String firstName, String lastName, String country, String occupation, String phone, LocalDate birthDate, String email, String city, String userName, String password, boolean blocked, List<Post> post, Picture profilePicture) {
+    public User(String firstName, String lastName, String country, String occupation, String phone, LocalDate birthDate, String email, String city, String userName, String password, boolean blocked, List<Post> post, String  profilePicture) {
         this.firstName = firstName;
         LastName = lastName;
         this.country = country;
@@ -47,7 +43,7 @@ public class User {
         this.userName = userName;
         this.password = password;
         this.blocked = blocked;
-        this.post = post;
+//        this.post = post;
         this.profilePicture = profilePicture;
     }
 
@@ -153,19 +149,19 @@ public class User {
         this.blocked = blocked;
     }
 
-    public List<Post> getPost() {
-        return post;
-    }
+//    public List<Post> getPost() {
+//        return post;
+//    }
+//
+//    public void setPost(List<Post> post) {
+//        this.post = post;
+//    }
 
-    public void setPost(List<Post> post) {
-        this.post = post;
-    }
-
-    public Picture getProfilePicture() {
+    public String getProfilePicture() {
         return profilePicture;
     }
 
-    public void setProfilePicture(Picture profilePicture) {
+    public void setProfilePicture(String profilePicture) {
         this.profilePicture = profilePicture;
     }
 }

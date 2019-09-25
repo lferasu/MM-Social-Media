@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -8,15 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-<<<<<<< HEAD
+
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>Mum Social Media</title>
-=======
-    <link rel="icon" href="/mumsm/img/favicon.png">
-    <title>Clean-Note</title>
->>>>>>> e70c9fd217bca330beef6e180619843b87cb7b14
+
     <!-- Bootstrap core CSS -->
-<<<<<<< HEAD
 <%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">--%>
@@ -61,7 +58,9 @@
             </button>
             <a class="navbar-brand" href="login.jsp">
 
+
                 <b>Mum Social Media</b>
+
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -116,7 +115,10 @@
     <a href="#">
         <img src="mumsm/img/Friends/woman-1.jpg">
     </a>
-    <h1 class="profile-name">Hillary McBrewk</h1>
+<%--    <h1 class="profile-name">Hillary McBrewk</h1>--%>
+    <h1 class="profile-name">${logggedInUser.firstName}</h1>
+<%--    <c:set var="name" value="${logggedInUser}" />--%>
+<%--    <c:out value="${logggedInUser.firstName}" />--%>
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 <!-- Timeline content -->

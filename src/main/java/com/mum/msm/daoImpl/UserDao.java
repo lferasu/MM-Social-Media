@@ -21,7 +21,7 @@ public class UserDao implements Dao<User> {
     public UserDao()
     {
         entityManager =  new JpaEntityManagerFactory(
-                new Class[]{User.class, Picture.class, Post.class, Advertisement.class}).getEntityManager();
+                new Class[]{User.class}).getEntityManager();
     }
 
 

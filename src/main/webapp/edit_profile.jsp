@@ -105,9 +105,23 @@
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 
-<form action="edit-profile" method="post">
-    <div id="edit-profile-container">
+<form action="edit-profile" method="post" id="profile-form" enctype="multipart/form-data">
 
+    <div id="image-container">
+        <div id="image-frame">
+            <img src="" id="profile-img-tag" width="200px" />
+        </div>
+        <div id ="image-select">
+            <input type="file" name="file" id="profile-img">
+        </div>
+
+        <input type="text" name = "profile-picture" hidden>
+
+    </div>
+
+
+
+    <div id="edit-profile-container">
 
         <label for="first-name" class="left-float">First Name:</label>
         <input type="text" name="first-name" id="first-name" placeholder="Your First Name" required/>
@@ -116,8 +130,8 @@
         <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" required/>
 
 
-        <label for="occuption" class="left-float">Occuption: </label>
-        <input type="text" name="occuption" id="occuption" placeholder="" required/>
+        <label for="occupation" class="left-float">Occuption: </label>
+        <input type="text" name="occupation" id="occupation" placeholder="" required/>
 
         <label for="phone" class="right-float">Phone: </label>
         <input type="text" name="phone" id="phone" placeholder="641-765-2342" required/>
@@ -135,7 +149,7 @@
         <label for="birth-day" class="center-float"> BirthDay</label>
         <input type="date" id="birth-day" name="birth-date">
 
-       <input type ="submit">
+       <input type ="submit" id="submitButton">
         <input type ="reset">
     </div>
 </form>
