@@ -1615,3 +1615,9 @@ a:hover, a:active, a:focus {
 .container-timeline{
   min-height: 490px;
 }
+
+p{
+    size :40px;
+    color : #2aabd2;
+
+}
