@@ -33,18 +33,18 @@ public class LoginFilterServlet implements Filter {
 //            chain.doFilter(request, response);
 //        }
 
-        PrintWriter out=response.getWriter();
-
-        String password=request.getParameter("password");
-        if(password.equals("admin")){
-            chain.doFilter(request, response);
-
-        }
-        else{
-            out.print("username or password error!");
-            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-            rd.include(request, response);
-        }
+//        PrintWriter out=response.getWriter();
+//
+//        String password=request.getParameter("password");
+//        if(password.equals("admin")){
+//            chain.doFilter(request, response);
+//
+//        }
+//        else{
+//            out.print("username or password error!");
+//            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+//            rd.include(request, response);
+//        }
 
 
 

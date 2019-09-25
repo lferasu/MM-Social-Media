@@ -2,6 +2,7 @@ package com.mum.msm.controller;
 
 import com.google.gson.Gson;
 import com.mum.msm.daoImpl.PostDao;
+import com.mum.msm.daoImpl.UserDao;
 import com.mum.msm.model.Post;
 import com.mum.msm.model.User;
 
@@ -20,8 +21,8 @@ public class PostStatus  extends HttpServlet {
 
         String postText = request.getParameter("text");
         // we will get it from session
-        User postUser = new User();
-        postUser.setId(1);
+        User postUser = new UserDao().get(5).orElse(null);
+
 
         Post post = new Post();
         PostDao postDao = new PostDao();

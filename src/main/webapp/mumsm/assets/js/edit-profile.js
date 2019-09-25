@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     var country_list = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas"
         ,"Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands"
@@ -22,4 +24,29 @@ $(document).ready(function(){
         $("#country").append($cont);
     });
 
+    $("#profile-img").change(function(){
+        readURL(this);
+    });
+
+    $("#submitButton").click(saveFile);
+
+});
+
+
+function saveFile() {
+
+}
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#profile-img-tag').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#profile-img").change(function(){
+    readURL(this);
 });

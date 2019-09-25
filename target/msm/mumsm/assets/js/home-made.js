@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-// $( document ).ready(function() {
-//     $("#registerButton").click(registerButtonClicked);
-//     $("#register-userName").change(validateUserName);
-//     alert("hello");
-// });
-=======
 $( document ).ready(function() {
     $("#registerButton").click(registerButtonClicked);
     $("#register-userName").change(validateUserName);
 });
->>>>>>> a7250a1df0aa17e7681b2295044dbd81a6857e96
-
-
 
 function validateUserName () {
     let userName = $("#register-userName").val() ;

@@ -77,12 +77,11 @@
                             <input type="password" name="password" class="form-control input-underline input-lg" placeholder="Password">
                         </div>
                     </div>
-<<<<<<< HEAD
+
 <%--                    <a href="profile.jsp" class="btn btn-info btn-lg">Log in</a>--%>
                     <input type="submit" value="Log in" class="btn btn-info btn-lg">
 =======
                     <a href="<c:out value="profile.jsp"></c:out>" class="btn btn-info btn-lg">Log in</a>
->>>>>>> a7250a1df0aa17e7681b2295044dbd81a6857e96
 
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>
