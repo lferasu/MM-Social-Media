@@ -1,9 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<<<<<<< HEAD
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-=======
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
->>>>>>> a7250a1df0aa17e7681b2295044dbd81a6857e96
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,8 +76,7 @@
 
 <%--                    <a href="profile.jsp" class="btn btn-info btn-lg">Log in</a>--%>
                     <input type="submit" value="Log in" class="btn btn-info btn-lg">
-=======
-                    <a href="<c:out value="profile.jsp"></c:out>" class="btn btn-info btn-lg">Log in</a>
+<%--                    <a href="<c:out value="profile.jsp"></c:out>" class="btn btn-info btn-lg">Log in</a>--%>
 
                     <a href="#" class="btn btn-info btn-lg btn-frm">Register</a>
                 </form>

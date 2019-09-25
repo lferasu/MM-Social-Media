@@ -20,18 +20,22 @@ public class LoginFilterServlet implements Filter {
 //    @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-//        HttpServletRequest req = (HttpServletRequest) request;
-//        HttpServletResponse res = (HttpServletResponse) response;
-//
-//        String uri = req.getRequestURI();
-//        this.context.log("Requested URL" + uri);
-//
-//        HttpSession session = req.getSession(false);
-//        if (session == null && !(uri.endsWith("jsp") || uri.endsWith("HomeServlet"))){
-//            this.context.log("Unauthorized access to MUM Social");
-//        } else {
-//            chain.doFilter(request, response);
-//        }
+        HttpServletRequest req = (HttpServletRequest) request;
+        HttpServletResponse res = (HttpServletResponse) response;
+
+        String uri = req.getRequestURI();
+        this.context.log("Requested URL" + uri);
+
+        HttpSession session = req.getSession(false);
+
+        if (session == null && !(uri.endsWith("jsp") || uri.endsWith("HomeServlet"))){
+            this.context.log("Unauthorized access to MUM Social");
+            response.setContentType("text/html");
+            res.sendRedirect("login.jsp");
+        } else {
+            chain.doFilter(request, response);
+        }
+
 
 //        PrintWriter out=response.getWriter();
 //

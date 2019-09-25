@@ -1,7 +1,9 @@
+
 $( document ).ready(function() {
     $("#registerButton").click(registerButtonClicked);
     $("#register-userName").change(validateUserName);
 });
+
 
 function validateUserName () {
     let userName = $("#register-userName").val() ;
