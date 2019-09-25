@@ -2,7 +2,21 @@
 $( document ).ready(function() {
     $("#registerButton").click(registerButtonClicked);
     $("#register-userName").change(validateUserName);
+    // $('#logout').click(logoutFunction);
 });
+
+// function logoutFunction() {
+//     $.ajax('LogoutServlet', {
+//         type: get,
+//         success: function () {
+//
+//         },
+//         error: function () {
+//
+//         }
+//     })
+//
+// }
 
 
 function validateUserName () {
