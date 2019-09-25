@@ -61,7 +61,7 @@
             <a class="navbar-brand" href="login.jsp">
 
 
-                <b>Mum Social Media</b>
+                <b>Mum Social</b>
 
             </a>
         </div>
@@ -113,7 +113,7 @@
                 <li><form method="post" action="logout" class="nav-controller">
                     <input type="submit" value="Log out" id="logout" >
                 </form></li>
-                <li><a href="#" class="nav-controller">Log Out</a></li>
+<%--                <li><a href="#" class="nav-controller">Log Out</a></li>--%>
             </ul>
         </div>
     </div>
