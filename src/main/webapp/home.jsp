@@ -115,8 +115,8 @@
                 </li>
                 <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>
                 <li>
-                    <form method="post" action="logout" class="nav-controller">
-                        <input type="submit" value="Log out" id="logout" >
+                    <form method="post" action="logout">
+                        <input type="submit" value="Log out" id="logout" class="nav-controller" >
                     </form>
                 </li>
             </ul>
@@ -220,68 +220,21 @@
                     </div>
                 </div><!-- End Friends activity -->
 
-                <!-- People You May Know -->
+                <!-- Add Advertisement -->
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title">People You May Know</h3>
+                        <h3 class="panel-title">Add Advert</h3>
+
+                        <form>
+                            <textarea placeholder="Your Adds Here" id = "ad-text" rows="2" class="form-control input-lg p-text-area" name="adds"></textarea>
+                        </form>
+                        <button class="btn btn-info pull-right" id ="ad-button">Post</button>
+
                     </div>
-                    <div class="panel-body">
-                        <div class="card">
-                            <div class="content">
-                                <ul class="list-unstyled team-members">
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="avatar">
-                                                    <img src="mumsm/img/Friends/guy-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                Carlos marthur
-                                            </div>
+                    <div class="panel-body" id="adverts">
 
-                                            <div class="col-xs-3 text-right">
-                                                <button class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="avatar">
-                                                    <img src="mumsm/img/Friends/woman-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                Maria gustami
-                                            </div>
-
-                                            <div class="col-xs-3 text-right">
-                                                <button class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="avatar">
-                                                    <img src="mumsm/img/Friends/woman-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                Angellina mcblown
-                                            </div>
-
-                                            <div class="col-xs-3 text-right">
-                                                <button class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                </div><!-- End people yout may know -->
+                </div><!-- End Add Advertisement -->
             </div><!-- end left content-->
             <!-- right  content-->
             <div class="profile-info col-md-8  animated fadeInRight">
@@ -346,8 +299,8 @@
     <%--    <c:if test="${session.getAttribute(\"logggedInUser\") == \"admin\"}" >--%>
     <div class="advert">
         <h1>MUM Ads</h1>
-        <div>
-            <p><%= session.getAttribute("logggedInUser") %></p>
+        <div id="mumads">
+
         </div>
     </div><!-- Adverts-->
     <%--    </c:if>--%>
@@ -423,7 +376,7 @@
 <footer class="welcome-footer">
     <div class="container">
         <p>
-        Copyright &copy; Company - All rights reserved
+        Copyright &copy; Surafel, Eden, Gizaw and Getaneh - All rights reserved
         </p>
     </div>
 </footer>

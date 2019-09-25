@@ -8,21 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <link rel="icon" href="/mumsm/img/favicon.png">
-    <title>Home - MUM Social</title>
-=======
-=======
->>>>>>> 8e87064dc1c0566233ec932f4e39d1e5133f35bf
 
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>Mum Social Media</title>
 
-<<<<<<< HEAD
->>>>>>> 891a151c9caf0aa12f9369298cbb9a23330adc88
-=======
->>>>>>> 8e87064dc1c0566233ec932f4e39d1e5133f35bf
     <!-- Bootstrap core CSS -->
 <%--    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
 <%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
@@ -71,11 +60,7 @@
             <a class="navbar-brand" href="login.jsp">
 
 
-<<<<<<< HEAD
                 <b>Mum Social</b>
-=======
-                <b>Mum Social Media</b>
->>>>>>> 8e87064dc1c0566233ec932f4e39d1e5133f35bf
 
             </a>
         </div>
