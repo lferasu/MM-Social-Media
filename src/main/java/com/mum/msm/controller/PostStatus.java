@@ -10,6 +10,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,11 +22,14 @@ import java.util.List;
 
 @WebServlet(name = "postStatus", urlPatterns = {"/statusPost"})
 public class PostStatus  extends HttpServlet {
-    private final String UPLOAD_DIRECTORY = "/WEB-INF/uploads/posts";
+    private final String UPLOAD_DIRECTORY = "uploads/posts";
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String fileName="";
+
+        ServletContext servletContext = getServletContext();
+        String contextPath = servletContext.getRealPath(File.separator);
 
         if(ServletFileUpload.isMultipartContent(request)){
             try {
@@ -35,7 +39,7 @@ public class PostStatus  extends HttpServlet {
                 for(FileItem item : multiparts){
                     if(!item.isFormField()){
                         fileName = new File(item.getName()).getName();
-                        item.write( new File(UPLOAD_DIRECTORY + File.separator + fileName));
+                        item.write( new File(contextPath + File.separator + UPLOAD_DIRECTORY + File.separator + fileName));
                     }
                     else
                     {

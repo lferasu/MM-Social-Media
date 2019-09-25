@@ -12,14 +12,13 @@ public class Advertisement {
     private long id;
     private String text;
 
-    @OneToMany(mappedBy="advertisement")
-    private List<Picture> picture;
+    private String picture;
     private boolean enabled;
 
     public Advertisement() {
     }
 
-    public Advertisement(String text, List<Picture> picture, boolean enabled) {
+    public Advertisement(String text, String picture, boolean enabled) {
         this.text = text;
         this.picture = picture;
         this.enabled = enabled;
@@ -41,11 +40,11 @@ public class Advertisement {
         this.text = text;
     }
 
-    public List<Picture> getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(List<Picture> picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 

@@ -42,6 +42,7 @@ function loadPost(JsonPost) {
     outerDiv.append(postImageContainer);
     outerDiv.append(postDescriptionContainer);
     $("#posts").prepend(outerDiv);
+
 }
 
 function showPostText(JsonPost) {
@@ -96,6 +97,8 @@ function postStatus(event) {
 
         // var attr = $(postImage).attr('src', "..\\..\\..\\WEB-INF\\uploads\\posts\\" + responseObj.picture);
         var attr = $(postImage).attr('src', $("#profile-img-tag").attr('src'));
+        let directory = "uploads\\posts\\";
+        var attr = $(postImage).attr('src', directory + responseObj.picture);
         $("#imgid").attr("width","500");
 
 
@@ -116,6 +119,7 @@ function postStatus(event) {
         outerDiv.append(postImageContainer);
         outerDiv.append(postDescriptionContainer);
         $("#posts").prepend(outerDiv);
+        $("#profile-img-tag").attr('src',"");
     }
 };
 }
