@@ -8,7 +8,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebFilter("/loginFilter")
+@WebFilter(urlPatterns = {"/login", "/profile", "/home"},
+        filterName = "LoginFilterServlet")
 public class LoginFilterServlet implements Filter {
 
     private ServletContext context;
@@ -30,15 +31,16 @@ public class LoginFilterServlet implements Filter {
 
         if (session == null && !(uri.endsWith("jsp") || uri.contains("servlet"))){
 
+
             this.context.log("Unauthorized access to MUM Social");
             response.setContentType("text/html");
-            res.sendRedirect("login.jsp");
+            res.sendRedirect("/login");
         } else if(uri.contains("login") || uri.contains("registration")){
-//            RequestDispatcher rd = req.getRequestDispatcher("/login");
-//            rd.forward(req, res);
+            RequestDispatcher rd = req.getRequestDispatcher("/loginServlet");
+            rd.forward(req, res);
 
 //            response.setContentType("text/html");
-            res.sendRedirect("profile.jsp");
+//            res.sendRedirect("home.jsp");
         }
 
         else {

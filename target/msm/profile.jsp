@@ -10,15 +10,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 <<<<<<< HEAD
-    <link rel="icon" href="mumsm/img/favicon.png">
-    <title>Mum Social Media</title>
-=======
     <link rel="icon" href="/mumsm/img/favicon.png">
-<<<<<<< HEAD
     <title>Home - MUM Social</title>
 =======
-    <title>Clean-Note</title>
->>>>>>> e70c9fd217bca330beef6e180619843b87cb7b14
+
+    <link rel="icon" href="mumsm/img/favicon.png">
+    <title>Mum Social Media</title>
+
 >>>>>>> 891a151c9caf0aa12f9369298cbb9a23330adc88
     <!-- Bootstrap core CSS -->
 <%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
@@ -65,11 +63,9 @@
             </button>
             <a class="navbar-brand" href="login.jsp">
 
-<<<<<<< HEAD
-                <b>Mum Social Media</b>
-=======
-                <b>MUM Social</b>
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
+
+                <b>Mum Social</b>
+
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -120,7 +116,7 @@
                 <li><form method="post" action="logout" class="nav-controller">
                     <input type="submit" value="Log out" id="logout" >
                 </form></li>
-                <li><a href="#" class="nav-controller">Log Out</a></li>
+<%--                <li><a href="#" class="nav-controller">Log Out</a></li>--%>
             </ul>
         </div>
     </div>

@@ -20,14 +20,10 @@
 <%--    <script src="mumsm/assets/js/custom.js"></script>--%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-<<<<<<< HEAD
-!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-<!--    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <![endif]-->
-=======
+
 <%--<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->--%>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
+
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -47,6 +43,7 @@
         <%@ include file="mumsm/assets/js/custom.js" %>
         <%@ include file="mumsm/assets/js/home-made.js" %>
         <%@ include file="mumsm/assets/js/post.js" %>
+        <%@ include file="mumsm/assets/js/userInfoDisplay.js" %>
     </script>
 
 
@@ -84,14 +81,13 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="profile.jsp">
-<<<<<<< HEAD
-                        Home Page
+                    <a href="profile.jsp" class="nameOfUser">
+
+<%--                        Home Page--%>
+<%--                        <%= session.getAttribute("logggedInUser") %>--%>
+<%--                        <div class="nameOfUser">Hello Mrs</div>--%>
                         <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
-=======
-                        Hillary McBrewk
-                        <img src="mum/img/Friends/woman-1.jpg" class="img-nav">
->>>>>>> afb2f616fc5111d0a30937b1cd4eff97a37b539b
+
                     </a>
                 </li>
                 <li class="active"><a href="home.jsp"><i class="fa fa-bars"></i>&nbsp;Home</a></li>
@@ -118,6 +114,11 @@
                     </ul>
                 </li>
                 <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>
+                <li>
+                    <form method="post" action="logout" class="nav-controller">
+                        <input type="submit" value="Log out" id="logout" >
+                    </form>
+                </li>
             </ul>
         </div>
     </div>
@@ -126,7 +127,10 @@
     <a href="#">
         <img src="mumsm/img/Friends/woman-1.jpg">
     </a>
-    <h1 class="profile-name">Home Page</h1>
+<%--    <h1 class="profile-name">Home Page</h1>--%>
+<%--    <h1 class="profile-name"><%= session.getAttribute("logggedInUser") %></h1>--%>
+    <div id="nameOfUser"></div>
+
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 <!-- Timeline content -->
@@ -338,73 +342,83 @@
     </div>
 </div><!-- end timeline content-->
 
+    <!-- Adverst-->
+    <%--    <c:if test="${session.getAttribute(\"logggedInUser\") == \"admin\"}" >--%>
+    <div class="advert">
+        <h1>MUM Ads</h1>
+        <div>
+            <p><%= session.getAttribute("logggedInUser") %></p>
+        </div>
+    </div><!-- Adverts-->
+    <%--    </c:if>--%>
+
 <!-- Online users sidebar content-->
-<div class="chat-sidebar focus">
-    <div class="list-group text-left">
-        <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p>
-        <p class="text-center chat-title">Online users</p>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/guy-2.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Jeferh Smith</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-times-circle absent-status"></i>
-            <img src="mumsm/img/Friends/woman-1.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Dapibus acatar</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/guy-3.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Antony andrew lobghi</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-2.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Maria fernanda coronel</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/guy-4.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Markton contz</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-times-circle absent-status"></i>
-            <img src="mumsm/img/Friends/woman-3.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Martha creaw</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-times-circle absent-status"></i>
-            <img src="mumsm/img/Friends/woman-8.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Yira Cartmen</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-4.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Jhoanath matew</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-5.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Ryanah Haywofd</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-9.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Linda palma</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-10.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Andrea ramos</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/child-1.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Dora ty bluekl</span>
-        </a>
-    </div>
-</div><!-- Online users sidebar content-->
+<%--<div class="chat-sidebar focus">--%>
+<%--    <div class="list-group text-left">--%>
+<%--        <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p>--%>
+<%--        <p class="text-center chat-title">Online users</p>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/guy-2.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Jeferh Smith</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-times-circle absent-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-1.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Dapibus acatar</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/guy-3.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Antony andrew lobghi</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-2.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Maria fernanda coronel</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/guy-4.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Markton contz</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-times-circle absent-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-3.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Martha creaw</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-times-circle absent-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-8.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Yira Cartmen</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-4.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Jhoanath matew</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-5.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Ryanah Haywofd</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-9.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Linda palma</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/woman-10.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Andrea ramos</span>--%>
+<%--        </a>--%>
+<%--        <a href="messages.jsp" class="list-group-item">--%>
+<%--            <i class="fa fa-check-circle connected-status"></i>--%>
+<%--            <img src="mumsm/img/Friends/child-1.jpg" class="img-chat img-thumbnail">--%>
+<%--            <span class="chat-user-name">Dora ty bluekl</span>--%>
+<%--        </a>--%>
+<%--    </div>--%>
+<%--</div><!-- Online users sidebar content-->--%>
 
 <footer class="welcome-footer">
     <div class="container">

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#post-button").click(postStatus);
 
-    alert("hello welcome")
+    // alert("hello welcome")
 });
 
 
