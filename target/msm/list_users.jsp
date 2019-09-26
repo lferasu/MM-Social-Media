@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,24 +13,31 @@
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>Mum Social Media</title>
     <!-- Bootstrap core CSS -->
-    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">
-    <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="mumsm/assets/css/timeline.css" rel="stylesheet">
-    <link href="mumsm/assets/css/list_users.css" rel="stylesheet">
-    <script src="mumsm/assets/js/jquery.1.11.1.min.js"></script>
-    <script src="mumsm/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-    <script src="mumsm/assets/js/custom.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style>
+        <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
+        <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
+        <%@ include file="mumsm/assets/css/errors.css"%>
+        <%@ include file="mumsm/assets/css/animate.min.css"%>
+        <%@ include file="mumsm/font-awesome-4.4.0/css/font-awesome.min.css"%>
+        <%@ include file="mumsm/assets/css/timeline.css"%>
+    </style>
+    <script>
+        <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>
+        <%@ include file="mumsm/bootstrap-3.3.5/js/bootstrap.min.js" %>
+        <%@ include file="mumsm/assets/js/custom.js" %>
+        <%@ include file="mumsm/assets/js/list.js" %>
+
+    </script>
     <![endif]-->
 </head>
 <body class="animated fadeIn list-users">
 
+
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-principal">
+
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -109,366 +118,49 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/guy-2.jpg" alt="">
-                                <a href="#" class="user-link">Mila Kunis</a>
-                                <span class="user-subhead">Admin</span>
-                            </td>
-                            <td>
-                                2013/08/08
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-default">Inactive</span>
-                            </td>
-                            <td>
-                                <a href="#">mila@kunis.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
+
+<%--                        <c:forEach var="ads" items="${adverts}" >--%>
+<%--                            <h4><c:out value="${ads.text}" /></h4>--%>
+<%--                        </c:forEach>--%>
+<%--                <c:out value="${user.email}"></c:out>--%>
+hellllllllllllllllllllooooooooooooo
+                <c:forEach var="user" items="${myListOfUsers}">
+                    hallo
+                    <tr>
+                        <td>
+                            <img src="mumsm/img/Friends/guy-2.jpg" alt="">
+                            <a href="#" class="user-link"><c:out value="${user.firstName}" /></a>
+                        </td>
+
+
+                        <td>
+                            <a href="#"><c:out value="${user.email}" /></a>
+                        </td>
+                        <td style="width: 20%;">
+                            <a href="#" class="table-link success">
 										<span class="fa-stack">
 											<i class="fa fa-square fa-stack-2x"></i>
 											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
 										</span>
-                                </a>
-                                <a href="#" class="table-link">
+                            </a>
+                            <a href="#" class="table-link">
 										<span class="fa-stack">
 											<i class="fa fa-square fa-stack-2x"></i>
 											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
+                            </a>
+                            <a href="#" class="table-link danger">
 										<span class="fa-stack">
 											<i class="fa fa-square fa-stack-2x"></i>
 											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
 										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/guy-3.jpg" alt="">
-                                <a href="#" class="user-link">George Clooney</a>
-                                <span class="user-subhead">Member</span>
-                            </td>
-                            <td>
-                                2013/08/12
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-success">Active</span>
-                            </td>
-                            <td>
-                                <a href="#">marlon@brando.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/guy-5.jpg" alt="">
-                                <a href="#" class="user-link">Ryan Gossling</a>
-                                <span class="user-subhead">Registered</span>
-                            </td>
-                            <td>
-                                2013/03/03
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-danger">Banned</span>
-                            </td>
-                            <td>
-                                <a href="#">jack@email.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/guy-8.jpg" alt="">
-                                <a href="#" class="user-link">Emma Watson</a>
-                                <span class="user-subhead">Registered</span>
-                            </td>
-                            <td>
-                                2004/01/24
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-warning">Pending</span>
-                            </td>
-                            <td>
-                                <a href="#">humphrey@email.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/guy-7.jpg" alt="">
-                                <a href="#" class="user-link">Robert Downey Jr.</a>
-                                <span class="user-subhead">Admin</span>
-                            </td>
-                            <td>
-                                2013/12/31
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-success">Active</span>
-                            </td>
-                            <td>
-                                <a href="#">spencer@tracy</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/woman-1.jpg" alt="">
-                                <a href="#" class="user-link">Mila Kunis</a>
-                                <span class="user-subhead">Admin</span>
-                            </td>
-                            <td>
-                                2013/08/08
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-default">Inactive</span>
-                            </td>
-                            <td>
-                                <a href="#">mila@kunis.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/woman-2.jpg" alt="">
-                                <a href="#" class="user-link">George Clooney</a>
-                                <span class="user-subhead">Member</span>
-                            </td>
-                            <td>
-                                2013/08/12
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-success">Active</span>
-                            </td>
-                            <td>
-                                <a href="#">marlon@brando.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/woman-3.jpg" alt="">
-                                <a href="#" class="user-link">Ryan Gossling</a>
-                                <span class="user-subhead">Registered</span>
-                            </td>
-                            <td>
-                                2013/03/03
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-danger">Banned</span>
-                            </td>
-                            <td>
-                                <a href="#">jack@email.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/woman-4.jpg" alt="">
-                                <a href="#" class="user-link">Emma Watson</a>
-                                <span class="user-subhead">Registered</span>
-                            </td>
-                            <td>
-                                2004/01/24
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-warning">Pending</span>
-                            </td>
-                            <td>
-                                <a href="#">humphrey@email.com</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="mumsm/img/Friends/woman-5.jpg" alt="">
-                                <a href="#" class="user-link">Robert Downey Jr.</a>
-                                <span class="user-subhead">Admin</span>
-                            </td>
-                            <td>
-                                2013/12/31
-                            </td>
-                            <td class="text-center">
-                                <span class="label label-success">Active</span>
-                            </td>
-                            <td>
-                                <a href="#">spencer@tracy</a>
-                            </td>
-                            <td style="width: 20%;">
-                                <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                                <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                                </a>
-                            </td>
-                        </tr>
+                            </a>
+                        </td>
+                    </tr>
+                </c:forEach>
+
+
+
                         </tbody>
                     </table>
                 </div>

@@ -38,6 +38,7 @@
 </head>
 <body class="animated fadeIn">
 <h1>Hello mum</h1>
+<a href="list_users.jsp" style="background-color: red">List of users</a>
 <!-- Fixed NavBar-->
 <%@ include file="fixedNavbar.jsp"%>
 

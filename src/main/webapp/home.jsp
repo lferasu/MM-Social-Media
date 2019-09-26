@@ -38,6 +38,7 @@
 </head>
 <body class="animated fadeIn">
 <h1>Hello mum</h1>
+
 <!-- Fixed NavBar-->
 <%@ include file="fixedNavbar.jsp"%>
 
