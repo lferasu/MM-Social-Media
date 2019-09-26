@@ -54,18 +54,7 @@
 
 <div class="row text-center cover-container">
     <a href="#">
-        <c:set var="directory" value="uploads\profile-pics\${logggedInUser.profilePicture}" />
-<%--            <c:if test="${logggedInUser.profilePicture != null}">--%>
-<%--        <c:out value="<img src='${directory}'>" />--%>
-        <c:out value="${directory}" />
-<%--                 <img src='${directory}'>--%>
-
-<%--            </c:if>--%>
-<%--            <img src="logggedInUser.profilePicture">--%>
-<%--        </c:set>--%>
-<%--        <img src="${logggedInUser.profilePicture}">--%>
-    <p style="background-color: red">username: ${logggedInUser.userName}</p>
-        <img src="mumsm/img/Friends/woman-1.jpg">
+        <img src="mumsm/img/Friends/eden.jpg">
     </a>
 <!-- User name  display -->
     <div id="nameOfUser"></div>
