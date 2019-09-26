@@ -71,6 +71,7 @@ public class PostStatus  extends HttpServlet {
         PostDao postDao = new PostDao();
         post.setText(postText);
         post.setUser(postUser);
+        post.setEnabled(true);
         post.setPicture(fileName);
         postDao.save(post);
         // return Json

@@ -121,7 +121,8 @@
 
 <!-- Adverst-->
 
-    <%@ include file="advert.jsp"%><!-- Adverts-->
+    <%@ include file="advert.jsp"%>
+<!-- Adverts-->
 
 
 <footer class="welcome-footer">
