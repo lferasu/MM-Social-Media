@@ -1124,6 +1124,7 @@ div.about-tab div.about-tab-content:not(.active){
     text-align: center;
     background-color: rgb(255, 255, 255);
     box-shadow: -3px 0px 3px 0px rgba(160, 160, 160, 0.30);
+    overflow: scroll;
 }
 
 .chat-sidebar.focus {
