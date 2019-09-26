@@ -31,11 +31,6 @@
         <%@ include file="mumsm/assets/css/animate.min.css"%>
         <%@ include file="mumsm/font-awesome-4.4.0/css/font-awesome.min.css"%>
         <%@ include file="mumsm/assets/css/timeline.css"%>
-        p{
-            size :32px;
-            color : red;
-
-        }
     </style>
     <script>
         <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>

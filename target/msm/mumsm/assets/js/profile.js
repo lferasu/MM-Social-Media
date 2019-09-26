@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $("#profile-img").change(function(){
         readURL(this);

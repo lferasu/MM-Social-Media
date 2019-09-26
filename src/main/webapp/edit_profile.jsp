@@ -152,14 +152,12 @@
         <input type ="reset" id="reset">
     </div>
 </form>
-<!-- Timeline content -->
+
 
 <%--<%@ include file="onlineUsers.jsp"%>--%>
+<%@ include file="advert.jsp"%>
 
 <!-- end timeline content-->
-
-<!-- Online users sidebar content-->
-
 
 <footer class="welcome-footer">
     <div class="container">
