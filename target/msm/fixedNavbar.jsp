@@ -30,9 +30,6 @@
                 <li>
                     <a href="profile.jsp" class="nameOfUser">
 
-                        <%--                        Home Page--%>
-                        <%--                        <%= session.getAttribute("logggedInUser") %>--%>
-                        <%--                        <div class="nameOfUser">Hello Mrs</div>--%>
                         <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
 
                     </a>
@@ -63,7 +60,8 @@
                 <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>
                 <li>
                     <form method="post" action="logout">
-                        <input type="submit" value="Log out" id="logout" class="nav-controller" >
+
+                        <input type="submit" value="Log out" id="logout" class="logoutbutton" >
                     </form>
                 </li>
             </ul>
