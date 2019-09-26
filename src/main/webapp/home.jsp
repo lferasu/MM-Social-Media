@@ -12,6 +12,9 @@
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>MUM Social Media</title>
 
+
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -128,7 +131,7 @@
 <!-- User name  display -->
     <div id="nameOfUser"></div>
 
-    <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
+    <p class="user-text">Sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 <!-- Timeline content -->
 <div class="container">
@@ -136,86 +139,7 @@
         <div class="row">
             <!-- left content-->
             <div class="profile-nav col-md-4">
-                <!-- Friends activity -->
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Friends activity</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="notification-row">
-                            <div class="notification-padding">
-                                <div class="sidebar-fa-image">
-                                    <img class="notifications" src="msm/img/Friends/guy-2.jpg">
-                                </div>
-                                <div class="sidebar-fa-text">
-                                    <b><a href="#">Carlos marthur</a></b> reviewed a
-                                    <b><a href="#">publication</a></b>.
-                                    <span class="timeago" >5 days ago</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="notification-row">
-                            <div class="notification-padding">
-                                <div class="sidebar-fa-image">
-                                    <img class="notifications" src="msm/img/Friends/woman-2.jpg">
-                                </div>
-                                <div class="sidebar-fa-text">
-                                    <b><a href="#">Hillary Markston</a></b> shared a
-                                    <b><a href="#">publication</a></b>.
-                                    <span class="timeago" >5 min ago</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="notification-row">
-                            <div class="notification-padding">
-                                <div class="sidebar-fa-image">
-                                    <img class="notifications" src="msm/img/Friends/woman-3.jpg">
-                                </div>
-                                <div class="sidebar-fa-text">
-                                    <b><a href="#">Leidy marshel</a></b> shared a
-                                    <b><a href="#">publication</a></b>.
-                                    <span class="timeago" >5 min ago</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="notification-row">
-                            <div class="notification-padding">
-                                <div class="sidebar-fa-image">
-                                    <img class="notifications" src="msm/img/Friends/woman-4.jpg">
-                                </div>
-                                <div class="sidebar-fa-text">
-                                    <b><a href="#">Presilla bo</a></b> shared a
-                                    <b><a href="#">publication</a></b>.
-                                    <span class="timeago" >5 min ago</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="notification-row">
-                            <div class="notification-padding">
-                                <div class="sidebar-fa-image">
-                                    <img class="notifications" src="msm/img/Friends/woman-4.jpg">
-                                </div>
-                                <div class="sidebar-fa-text">
-                                    <b><a href="#">Martha markguy</a></b> shared a
-                                    <b><a href="#">publication</a></b>.
-                                    <span class="timeago" >5 min ago</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="notification-row">
-                            <div class="notification-padding">
-                                <div class="sidebar-fa-image">
-                                    <img class="notifications" src="mumsm/img/Friends/guy-5.jpg">
-                                </div>
-                                <div class="sidebar-fa-text">
-                                    <b><a href="#">Carlos marthur</a></b> reviewed a
-                                    <b><a href="#">publication</a></b>.
-                                    <span class="timeago" >5 days ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Friends activity -->
+                <%@ include file="weather.jsp"%>
 
                 <!-- Add Advertisement -->
     <c:if test="${logggedInUser.userName == 'Admin'}">
