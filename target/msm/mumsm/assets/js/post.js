@@ -77,8 +77,6 @@ function postStatus(event) {
     xhr.onload =      function(responseText) {
 
         if (this.status == 200) {
-            alert(this.responseText);
-
             var responseObj = JSON.parse( responseText.target.response);
             let imgid = responseObj.picture.split(".")[0];
 

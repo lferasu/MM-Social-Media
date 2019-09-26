@@ -11,7 +11,27 @@ function loadUserName(JsonName) {
     dynamicName.text(JsonName.userName);
     dynamicName2.text(JsonName.userName);
 
+     let pPicture =  $("<img id = \"profile-picture-circle\"  class=\"img-nav\">");
 
+     let directory = "uploads\\profile-pics\\";
+     if(JsonName.profilePicture)
+     {
+         (pPicture).attr('src', directory + JsonName.profilePicture);
+     }
+     else
+     {
+         (pPicture).attr('src', directory + "user.jpg");
+     }
+
+
+
+    // let directory = "uploads\\posts\\";
+    // var attr = $(postImage).attr('src', directory + responseObj.picture);
+
+
+    $("#profile-info-container").append(pPicture);
+
+   // $("#profile-picture-circle").setAttribute("src", JsonName.profilePicture);
     $('#nameOfUser').append(dynamicName);
     $('.nameOfUser').prepend(dynamicName2);
 }

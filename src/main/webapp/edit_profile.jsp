@@ -37,10 +37,8 @@
 <%@ include file="fixedNavbar.jsp"%>
 
 <div class="row text-center cover-container">
-    <a href="#">
-        <img src="mumsm/img/Friends/eden.jpg">
-    </a>
-    <div id="nameOfUser"></div>
+    <a href="#" id="profile-info-container"></a>
+    <div id= "nameOfUser"></div>
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 
