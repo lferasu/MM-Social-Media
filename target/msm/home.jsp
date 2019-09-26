@@ -42,6 +42,7 @@
         <%@ include file="mumsm/assets/js/post.js" %>
         <%@ include file="mumsm/assets/js/userInfoDisplay.js" %>
         <%@ include file="mumsm/assets/js/adverts.js" %>
+        <%@ include file="mumsm/assets/js/home.js" %>
     </script>
 
 
@@ -52,7 +53,7 @@
 <%@ include file="fixedNavbar.jsp"%>
 <!-- End of Fixed NavBar-->
 
-<<<<<<< HEAD
+<%--<<<<<<< HEAD--%>
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-principal">
     <div class="container">
@@ -128,24 +129,22 @@
 </nav>
 
 <div class="row text-center cover-container">
-<<<<<<< HEAD
-    <a href="#" id="profile-info-container">
+  <a href="#" id="profile-info-container">
 
-=======
     <a href="#">
-        <c:set var="directory" value="uploads\profile-pics\${logggedInUser.profilePicture}" />
-<%--            <c:if test="${logggedInUser.profilePicture != null}">--%>
-        <c:out value="<img src='${directory}'>" />
-        <c:out value="${directory}" />
+<%--        <c:set var="directory" value="uploads\profile-pics\${logggedInUser.profilePicture}" />--%>
+<%--&lt;%&ndash;            <c:if test="${logggedInUser.profilePicture != null}">&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <c:out value="<img src='${directory}'>" />&ndash;%&gt;--%>
+<%--        <c:out value="${directory}" />--%>
 <%--                 <img src='${directory}'>--%>
 
 <%--            </c:if>--%>
 <%--            <img src="logggedInUser.profilePicture">--%>
 <%--        </c:set>--%>
 <%--        <img src="${logggedInUser.profilePicture}">--%>
-    <p style="background-color: red">username: ${logggedInUser.userName}</p>
-        <img src="mumsm/img/Friends/woman-1.jpg">
->>>>>>> 013414d432029e82bfe1c25d638b4cc31a90507e
+<%--    <p style="background-color: red">username: ${logggedInUser.userName}</p>--%>
+<%--        <img src="mumsm/img/Friends/woman-1.jpg">--%>
+
     </a>
 <!-- User name  display -->
     <div id="nameOfUser"></div>
@@ -283,28 +282,28 @@
                 </div>
                 <!-- first post-->
                 <div id="posts">
-                    <div class="panel panel-white post panel-shadow post-container" >
-                        <div class="post-heading">
-                            <div class="pull-left image">
-                                <img src="mumsm/img/Friends/guy-2.jpg" class="avatar" alt="user profile image">
-                            </div>
-                            <div class="pull-left meta">
-                                <div class="title h5">
-                                    <a href="#" class="post-user-name">Omarion welkdic</a>
-                                    uploaded a photo.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-image">
-                            <img src="mumsm/img/Post/game.jpg" class="image show-in-modal" alt="image post">
-                        </div>
-                        <div class="post-description">
-                            <p>This is a short description</p>
-                        </div>
+<%--                    <div class="panel panel-white post panel-shadow post-container" >--%>
+<%--                        <div class="post-heading">--%>
+<%--                            <div class="pull-left image">--%>
+<%--                                <img src="mumsm/img/Friends/guy-2.jpg" class="avatar" alt="user profile image">--%>
+<%--                            </div>--%>
+<%--                            <div class="pull-left meta">--%>
+<%--                                <div class="title h5">--%>
+<%--                                    <a href="#" class="post-user-name">Omarion welkdic</a>--%>
+<%--                                    uploaded a photo.--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                        </div>--%>
+<%--                        <div class="post-image">--%>
+<%--                            <img src="mumsm/img/Post/game.jpg" class="image show-in-modal" alt="image post">--%>
+<%--                        </div>--%>
+<%--                        <div class="post-description">--%>
+<%--                            <p>This is a short description</p>--%>
+<%--                        </div>--%>
 
-<%--                    </div>--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
 
-                </div>
+<%--                </div>--%>
 
                 <div class="panel panel-white post-load-more panel-shadow text-center">
                     <button class="btn btn-info" id ="load-more">

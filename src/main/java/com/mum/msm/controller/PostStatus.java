@@ -63,7 +63,9 @@ public class PostStatus  extends HttpServlet {
 
         String postText = request.getAttribute("postText").toString();
         // we will get it from session
-        User postUser = new UserDao().get(5).orElse(null);
+
+        User loggedInUser = (User)request.getSession().getAttribute("logggedInUser");
+        User postUser = new UserDao().findWithUserName(loggedInUser.getUserName()).get(0);
 
         Post post = new Post();
         PostDao postDao = new PostDao();
@@ -75,7 +77,6 @@ public class PostStatus  extends HttpServlet {
         response.setContentType("application/json");
 
          Gson gson = new Gson();
-         post.setId(2);
          gson.toJson(post);
          response.getWriter().write( gson.toJson(post));
 
