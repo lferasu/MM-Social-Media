@@ -82,15 +82,22 @@
             <option>hello</option>
         </select>
 
-
         <label for="birth-day" class="center-float"> BirthDay</label>
         <input type="date" id="birth-day" name="birth-date">
 
-       <input type ="submit" id="submitButton">
+       <input type ="submit" id="submitButton" >
         <input type ="reset" id="reset">
     </div>
 </form>
 
+<<<<<<< HEAD
+
+<%--<%@ include file="onlineUsers.jsp"%>--%>
+<%@ include file="advert.jsp"%>
+
+<!-- end timeline content-->
+=======
+>>>>>>> 23737fd95e19329c2132105ded51b556452d0dd5
 
 <footer class="welcome-footer">
     <div class="container">
