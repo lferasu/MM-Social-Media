@@ -87,6 +87,17 @@ footer {
 .navbar-principal a i { 
   font-size: 20px;
 }
+.logoutbutton {
+    background-color: #3CA2E0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+}
+.logoutbutton:hover {
+    background-color: #3082B3;
+}
 
 .img-nav{
   width: 25px;
@@ -106,7 +117,7 @@ footer {
 .cover-container{
   height:300px;
   background:#3ca2e0;
-  margin-top:53px;
+  margin-top:0px;
 }
 
 .color-container{

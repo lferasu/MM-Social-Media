@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,11 +32,6 @@
         <%@ include file="mumsm/assets/css/animate.min.css"%>
         <%@ include file="mumsm/font-awesome-4.4.0/css/font-awesome.min.css"%>
         <%@ include file="mumsm/assets/css/timeline.css"%>
-        p{
-            size :32px;
-            color : red;
-
-        }
     </style>
     <script>
         <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>
@@ -44,13 +40,18 @@
         <%@ include file="mumsm/assets/js/home-made.js" %>
         <%@ include file="mumsm/assets/js/post.js" %>
         <%@ include file="mumsm/assets/js/userInfoDisplay.js" %>
+        <%@ include file="mumsm/assets/js/adverts.js" %>
     </script>
 
 
 </head>
 <body class="animated fadeIn">
 <h1>Hello mum</h1>
+<!-- Fixed NavBar-->
+<%@ include file="fixedNavbar.jsp"%>
+<!-- End of Fixed NavBar-->
 
+<<<<<<< HEAD
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-principal">
     <div class="container">
@@ -124,12 +125,12 @@
         </div>
     </div>
 </nav>
+
 <div class="row text-center cover-container">
     <a href="#" id="profile-info-container">
 
     </a>
-<%--    <h1 class="profile-name">Home Page</h1>--%>
-<%--    <h1 class="profile-name"><%= session.getAttribute("logggedInUser") %></h1>--%>
+<!-- User name  display -->
     <div id="nameOfUser"></div>
 
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
@@ -221,68 +222,23 @@
                     </div>
                 </div><!-- End Friends activity -->
 
-                <!-- People You May Know -->
+                <!-- Add Advertisement -->
+    <c:if test="${logggedInUser.userName == 'Admin'}">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title">People You May Know</h3>
+                        <h3 class="panel-title">Add Advert</h3>
+
+                        <form>
+                            <textarea placeholder="Your Adds Here" id = "ad-text" rows="2" class="form-control input-lg p-text-area" name="adds"></textarea>
+                        </form>
+                        <button class="btn btn-info pull-right" id ="ad-button">Post</button>
+
                     </div>
-                    <div class="panel-body">
-                        <div class="card">
-                            <div class="content">
-                                <ul class="list-unstyled team-members">
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="avatar">
-                                                    <img src="mumsm/img/Friends/guy-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                Carlos marthur
-                                            </div>
+                    <div class="panel-body" id="adverts" style="background-color: #D9EDF7">
 
-                                            <div class="col-xs-3 text-right">
-                                                <button class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="avatar">
-                                                    <img src="mumsm/img/Friends/woman-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                Maria gustami
-                                            </div>
-
-                                            <div class="col-xs-3 text-right">
-                                                <button class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="avatar">
-                                                    <img src="mumsm/img/Friends/woman-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                Angellina mcblown
-                                            </div>
-
-                                            <div class="col-xs-3 text-right">
-                                                <button class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                </div><!-- End people yout may know -->
+                </div><!-- End Add Advertisement -->
+    </c:if>
             </div><!-- end left content-->
             <!-- right  content-->
             <div class="profile-info col-md-8  animated fadeInRight">
@@ -344,87 +300,17 @@
 </div><!-- end timeline content-->
 
     <!-- Adverst-->
-    <%--    <c:if test="${session.getAttribute(\"logggedInUser\") == \"admin\"}" >--%>
-    <div class="advert">
-        <h1>MUM Ads</h1>
-        <div>
-            <p><%= session.getAttribute("logggedInUser") %></p>
-        </div>
-    </div><!-- Adverts-->
-    <%--    </c:if>--%>
 
-<!-- Online users sidebar content-->
-<%--<div class="chat-sidebar focus">--%>
-<%--    <div class="list-group text-left">--%>
-<%--        <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p>--%>
-<%--        <p class="text-center chat-title">Online users</p>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/guy-2.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Jeferh Smith</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-times-circle absent-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-1.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Dapibus acatar</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/guy-3.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Antony andrew lobghi</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-2.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Maria fernanda coronel</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/guy-4.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Markton contz</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-times-circle absent-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-3.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Martha creaw</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-times-circle absent-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-8.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Yira Cartmen</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-4.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Jhoanath matew</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-5.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Ryanah Haywofd</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-9.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Linda palma</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/woman-10.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Andrea ramos</span>--%>
-<%--        </a>--%>
-<%--        <a href="messages.jsp" class="list-group-item">--%>
-<%--            <i class="fa fa-check-circle connected-status"></i>--%>
-<%--            <img src="mumsm/img/Friends/child-1.jpg" class="img-chat img-thumbnail">--%>
-<%--            <span class="chat-user-name">Dora ty bluekl</span>--%>
-<%--        </a>--%>
-<%--    </div>--%>
-<%--</div><!-- Online users sidebar content-->--%>
+<%--    <c:if test="${logggedInUser.userName == 'Admin'}">--%>
+    <%@ include file="advert.jsp"%>
+<%--    </c:if>--%>
+
+    <!-- Adverts-->
 
 <footer class="welcome-footer">
     <div class="container">
         <p>
-        Copyright &copy; Company - All rights reserved
+        Copyright &copy; Surafel, Eden, Gizaw and Getaneh - All rights reserved
         </p>
     </div>
 </footer>

@@ -13,14 +13,9 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String name = (String)session.getAttribute("logggedInUserName");
-//        session.removeAttribute(name);
+        session.removeAttribute("logggedInUser");
         session.invalidate();
-        response.sendRedirect("/login");
-
-//        response.setContentType("text/html");
-//        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-//        rd.forward(request, response);
+        response.sendRedirect("login.jsp");
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
