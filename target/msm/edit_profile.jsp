@@ -146,10 +146,12 @@
         </select>
 
 
+
+
         <label for="birth-day" class="center-float"> BirthDay</label>
         <input type="date" id="birth-day" name="birth-date">
 
-       <input type ="submit" id="submitButton">
+       <input type ="submit" id="submitButton" >
         <input type ="reset" id="reset">
     </div>
 </form>

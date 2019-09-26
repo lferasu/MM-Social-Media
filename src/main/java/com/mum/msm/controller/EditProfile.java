@@ -104,7 +104,7 @@ public class EditProfile extends HttpServlet {
             }
         }
 
-        response.getWriter().write("Success");
+        response.getWriter().write("You filled your profile successfully");
 
     }
 }
