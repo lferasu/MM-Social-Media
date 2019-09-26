@@ -98,6 +98,9 @@ footer {
 .logoutbutton:hover {
     background-color: #3082B3;
 }
+.addsHeading {
+    text-decoration: underline;
+}
 
 .img-nav{
   width: 25px;

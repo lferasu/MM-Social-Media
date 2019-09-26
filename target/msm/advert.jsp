@@ -1,7 +1,7 @@
 
 
 <div class="advert">
-    <h1>MUM Ads</h1>
+    <h1 class="addsHeading">MUM Ads</h1>
     <div id="mumads">
 
     </div>
