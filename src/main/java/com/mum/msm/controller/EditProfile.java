@@ -82,10 +82,12 @@ public class EditProfile extends HttpServlet {
 
         UserDao userDao = new UserDao();
         User loggedInUser = (User)request.getSession().getAttribute("logggedInUser");
+        User editUser = new User();
+        if(loggedInUser != null) {
+            editUser = userDao.get(loggedInUser.getId()).orElse(null);
+        }
 
-        User editUser = userDao.get(loggedInUser.getId()).orElse(null);
-
-        if(editUser!= null)
+        if(loggedInUser != null)
         {
             editUser.setFirstName(fName);
             editUser.setLastName(lName);
@@ -113,6 +115,30 @@ public class EditProfile extends HttpServlet {
 
             RequestDispatcher rs = request.getRequestDispatcher("home.jsp");
             rs.forward(request, response);
+        }
+        else {
+            User newUser = new User();
+            UserDao userDaoNew = new UserDao();
+
+            newUser.setFirstName(fName);
+            newUser.setLastName(lName);
+            newUser.setPhone(phone);
+            newUser.setCountry(country);
+            newUser.setOccupation(occupation);
+            newUser.setBirthDate(birthDate);
+            newUser.setProfilePicture(fileName);
+
+            try {
+
+                userDaoNew.save(newUser);
+
+            } catch (Exception e){
+                response.getWriter().write(e.getMessage());
+            }
+
+            RequestDispatcher rs = request.getRequestDispatcher("home.jsp");
+            rs.forward(request, response);
+
         }
 
         }

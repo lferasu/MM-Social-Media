@@ -90,14 +90,6 @@
     </div>
 </form>
 
-<<<<<<< HEAD
-
-<%--<%@ include file="onlineUsers.jsp"%>--%>
-<%@ include file="advert.jsp"%>
-
-<!-- end timeline content-->
-=======
->>>>>>> 23737fd95e19329c2132105ded51b556452d0dd5
 
 <footer class="welcome-footer">
     <div class="container">
