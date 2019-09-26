@@ -23,7 +23,7 @@ let rtext = JSON.parse(responseText);
         let image = $("<img class=\"avatar>");
         image.attr("id", ""+id);
         let userName = $("<a href=\"# \" class=\"user-link\"></a>");
-        let blockUser = $("<button> Block User</button>");
+        let blockUser = $("<button class=\"logoutbutton\"> Block User</button>");
         blockUser.removeAttr("disabled");
 
         let postHeading = $("<div class=\"post-heading\ fa fa-square fa-stack-2x\"></div>");
