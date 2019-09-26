@@ -13,10 +13,11 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String name = (String)session.getAttribute("logggedInUserName");
+//        String name = (String)session.getAttribute("logggedInUserName");
 //        session.removeAttribute(name);
+        session.removeAttribute("logggedInUser");
         session.invalidate();
-        response.sendRedirect("/login");
+        response.sendRedirect("login.jsp");
 
 //        response.setContentType("text/html");
 //        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
