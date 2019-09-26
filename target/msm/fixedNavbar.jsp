@@ -18,7 +18,7 @@
                 <li>
                     <a href="profile.jsp" class="nameOfUser">
 
-                        <img src="mumsm/img/Friends/eden.jpg" class="img-nav">
+                        <img id="eden-pic" src="mumsm/img/Friends/eden.jpg" class="img-nav">
 
                     </a>
                 </li>

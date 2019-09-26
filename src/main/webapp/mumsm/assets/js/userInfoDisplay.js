@@ -17,10 +17,12 @@ function loadUserName(JsonName) {
      if(JsonName.profilePicture)
      {
          (pPicture).attr('src', directory + JsonName.profilePicture);
+         $("#eden-pic").attr('src', directory + JsonName.profilePicture);
      }
      else
      {
          (pPicture).attr('src', directory + "user.jpg");
+         $("#eden-pic").attr('src', directory + "user.jpg");
      }
 
 
@@ -30,7 +32,7 @@ function loadUserName(JsonName) {
 
 
     $("#profile-info-container").append(pPicture);
-
+    //$("#eden-pic").append(pPicture);
    // $("#profile-picture-circle").setAttribute("src", JsonName.profilePicture);
     $('#nameOfUser').append(dynamicName);
     $('.nameOfUser').prepend(dynamicName2);

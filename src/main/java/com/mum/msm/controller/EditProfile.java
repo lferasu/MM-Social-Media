@@ -26,7 +26,7 @@ import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.List;
 
-@WebServlet(name ="edit-profile", urlPatterns = {"/edit-profile"})
+@WebServlet(name ="edit-profile", urlPatterns = {"/editprofile"})
 @MultipartConfig
 public class EditProfile extends HttpServlet {
 
@@ -114,6 +114,7 @@ public class EditProfile extends HttpServlet {
             RequestDispatcher rs = request.getRequestDispatcher("home.jsp");
             rs.forward(request, response);
         }
+
         }
 
     }

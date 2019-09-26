@@ -33,7 +33,7 @@ public class LoginFilterServlet implements Filter {
 
 
             this.context.log("Unauthorized access to MUM Social");
-            response.setContentType("text/html");
+            res.setContentType("text/html");
             res.sendRedirect("/login");
         } else if(uri.contains("login") || uri.contains("registration")){
 

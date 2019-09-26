@@ -42,7 +42,7 @@
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
 </div>
 
-<form action="edit-profile" method="post" id="profile-form" enctype="multipart/form-data">
+<form action="editprofile" method="post" id="profile-form" enctype="multipart/form-data">
 
     <div id="image-container">
         <div id="image-frame">
