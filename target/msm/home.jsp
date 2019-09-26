@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page isELIgnored = "false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,8 +128,24 @@
 </nav>
 
 <div class="row text-center cover-container">
+<<<<<<< HEAD
     <a href="#" id="profile-info-container">
 
+=======
+    <a href="#">
+        <c:set var="directory" value="uploads\profile-pics\${logggedInUser.profilePicture}" />
+<%--            <c:if test="${logggedInUser.profilePicture != null}">--%>
+        <c:out value="<img src='${directory}'>" />
+        <c:out value="${directory}" />
+<%--                 <img src='${directory}'>--%>
+
+<%--            </c:if>--%>
+<%--            <img src="logggedInUser.profilePicture">--%>
+<%--        </c:set>--%>
+<%--        <img src="${logggedInUser.profilePicture}">--%>
+    <p style="background-color: red">username: ${logggedInUser.userName}</p>
+        <img src="mumsm/img/Friends/woman-1.jpg">
+>>>>>>> 013414d432029e82bfe1c25d638b4cc31a90507e
     </a>
 <!-- User name  display -->
     <div id="nameOfUser"></div>
@@ -301,11 +318,9 @@
 
     <!-- Adverst-->
 
-<%--    <c:if test="${logggedInUser.userName == 'Admin'}">--%>
     <%@ include file="advert.jsp"%>
-<%--    </c:if>--%>
 
-    <!-- Adverts-->
+    <!-- End of Adverts-->
 
 <footer class="welcome-footer">
     <div class="container">
