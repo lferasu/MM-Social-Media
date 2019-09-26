@@ -81,12 +81,13 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="profile.jsp" class="nameOfUser">
+
+                    <a href="profile.jsp" class="nameOfUser" id ="profile-link">
 
 <%--                        Home Page--%>
 <%--                        <%= session.getAttribute("logggedInUser") %>--%>
 <%--                        <div class="nameOfUser">Hello Mrs</div>--%>
-                        <img src="mumsm/img/Friends/woman-1.jpg" class="img-nav">
+<%--                        <img id = "profile-picture-circle"  class="img-nav">--%>
 
                     </a>
                 </li>
@@ -124,8 +125,8 @@
     </div>
 </nav>
 <div class="row text-center cover-container">
-    <a href="#">
-        <img src="mumsm/img/Friends/woman-1.jpg">
+    <a href="#" id="profile-info-container">
+
     </a>
 <%--    <h1 class="profile-name">Home Page</h1>--%>
 <%--    <h1 class="profile-name"><%= session.getAttribute("logggedInUser") %></h1>--%>

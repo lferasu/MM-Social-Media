@@ -98,8 +98,8 @@
     </div>
 </nav>
 <div class="row text-center cover-container">
-    <a href="#">
-        <img src="mumsm/img/Friends/woman-1.jpg">
+    <a href="#" id="profile-info-container>
+<%--        <img src="mumsm/img/Friends/woman-1.jpg">--%>
     </a>
     <h1 class="profile-name">Hillary McBrewk</h1>
     <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>

@@ -9,6 +9,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -26,13 +27,15 @@ import java.util.List;
 @MultipartConfig
 public class EditProfile extends HttpServlet {
 
-    private final String UPLOAD_DIRECTORY = "/WEB-INF/uploads";
+    private final String UPLOAD_DIRECTORY = "uploads/profile-pics";
 
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String fileName="";
+        ServletContext servletContext = getServletContext();
+        String contextPath = servletContext.getRealPath(File.separator);
 
         if(ServletFileUpload.isMultipartContent(request)){
             try {
@@ -42,7 +45,7 @@ public class EditProfile extends HttpServlet {
                 for(FileItem item : multiparts){
                     if(!item.isFormField()){
                         fileName = new File(item.getName()).getName();
-                        item.write( new File(UPLOAD_DIRECTORY + File.separator + fileName));
+                        item.write( new File(contextPath + File.separator + UPLOAD_DIRECTORY + File.separator + fileName));
                     }
                     else
                     {
@@ -75,8 +78,9 @@ public class EditProfile extends HttpServlet {
         LocalDate birthDate = LocalDate.of(Integer.parseInt(dateStringArray[0]),Integer.parseInt(dateStringArray[1]),Integer.parseInt(dateStringArray[2]));
 
         UserDao userDao = new UserDao();
+        User loggedInUser = (User)request.getSession().getAttribute("logggedInUser");
 
-        User editUser = userDao.get(1).orElse(null);
+        User editUser = userDao.get(loggedInUser.getId()).orElse(null);
 
         if(editUser!= null)
         {
@@ -95,7 +99,8 @@ public class EditProfile extends HttpServlet {
                 editUser.getPhone(),
                 editUser.getCountry(),
                 editUser.getOccupation(),
-                editUser.getBirthDate().toString()
+                editUser.getBirthDate().toString(),
+                editUser.getProfilePicture()
                 });
 
             } catch (Exception e)
