@@ -30,7 +30,12 @@ public class PostDao implements Dao<Post> {
 
     @Override
     public List<Post> getAll() {
-        Query query = entityManager.createQuery("SELECT e FROM Post e");
+        Query query = entityManager.createQuery("SELECT e FROM Post e ");
+        return query.getResultList();
+    }
+
+    public List<Post> getAllGech() {
+        Query query = entityManager.createQuery("SELECT e FROM Post e WHERE e.enabled =: true");
         return query.getResultList();
     }
 

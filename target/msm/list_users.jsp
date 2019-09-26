@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page isELIgnored="false" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page isELIgnored = "false" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>Mum Social Media</title>
-    <!-- Bootstrap core CSS -->
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -27,15 +25,18 @@
         <%@ include file="mumsm/assets/js/jquery.1.11.1.min.js" %>
         <%@ include file="mumsm/bootstrap-3.3.5/js/bootstrap.min.js" %>
         <%@ include file="mumsm/assets/js/custom.js" %>
-        <%@ include file="mumsm/assets/js/list.js" %>
-
+        <%@ include file="mumsm/assets/js/home-made.js" %>
+        <%@ include file="mumsm/assets/js/post.js" %>
+        <%@ include file="mumsm/assets/js/userInfoDisplay.js" %>
+        <%@ include file="mumsm/assets/js/adverts.js" %>
+        <%@ include file="mumsm/assets/js/home.js" %>
     </script>
-    <![endif]-->
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 <body class="animated fadeIn list-users">
 
-
-<!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-principal">
 
     <div class="container">
@@ -123,7 +124,6 @@
 <%--                            <h4><c:out value="${ads.text}" /></h4>--%>
 <%--                        </c:forEach>--%>
 <%--                <c:out value="${user.email}"></c:out>--%>
-hellllllllllllllllllllooooooooooooo
                 <c:forEach var="user" items="${myListOfUsers}">
                     hallo
                     <tr>
@@ -177,86 +177,16 @@ hellllllllllllllllllllooooooooooooo
         </div><!-- end timeline content-->
     </div>
 </div>
+<!-- Adverst-->
 
-<!-- Online users sidebar content-->
-<div class="chat-sidebar focus">
-    <div class="list-group text-left">
-        <p class="text-center visible-xs"><a href="#" class="hide-chat btn btn-success">Hide</a></p>
-        <p class="text-center chat-title">Online users</p>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/guy-2.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Jeferh Smith</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-times-circle absent-status"></i>
-            <img src="mumsm/img/Friends/woman-1.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Dapibus acatar</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/guy-3.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Antony andrew lobghi</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-2.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Maria fernanda coronel</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/guy-4.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Markton contz</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-times-circle absent-status"></i>
-            <img src="mumsm/img/Friends/woman-3.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Martha creaw</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-times-circle absent-status"></i>
-            <img src="mumsm/img/Friends/woman-8.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Yira Cartmen</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-4.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Jhoanath matew</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-5.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Ryanah Haywofd</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-9.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Linda palma</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/woman-10.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Andrea ramos</span>
-        </a>
-        <a href="messages.jsp" class="list-group-item">
-            <i class="fa fa-check-circle connected-status"></i>
-            <img src="mumsm/img/Friends/child-1.jpg" class="img-chat img-thumbnail">
-            <span class="chat-user-name">Dora ty bluekl</span>
-        </a>
-    </div>
-</div><!-- Online users sidebar content-->
+<%@ include file="advert.jsp"%>
+<!-- Adverts-->
 
 <footer class="welcome-footer">
     <div class="container">
         <p>
-        <div class="footer-links">
-            <a href="#">Terms of Use</a> |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Developers</a> |
-            <a href="#">Contact</a> |
-            <a href="#">About</a>
-        </div>
-        Copyright &copy; Company - All rights reserved
+
+            Copyright &copy; Surafel, Eden, Gizaw, Getaneh - All rights reserved
         </p>
     </div>
 </footer>

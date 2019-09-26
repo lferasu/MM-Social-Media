@@ -9,6 +9,8 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -20,6 +22,7 @@ import javax.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -67,7 +70,7 @@ public class EditProfile extends HttpServlet {
         }
 
 
-        String fName =request.getAttribute("first-name").toString();
+        String fName = request.getAttribute("first-name").toString();
         String lName = request.getAttribute("last-name").toString();
         String phone = request.getAttribute("phone").toString();
         String city = request.getAttribute("city").toString();
@@ -107,9 +110,11 @@ public class EditProfile extends HttpServlet {
             {
                 response.getWriter().write(e.getMessage());
             }
+
+            RequestDispatcher rs = request.getRequestDispatcher("home.jsp");
+            rs.forward(request, response);
+        }
         }
 
-        response.getWriter().write("Success");
-
     }
-}
+
