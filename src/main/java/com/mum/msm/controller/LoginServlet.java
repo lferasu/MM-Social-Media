@@ -1,6 +1,7 @@
 package com.mum.msm.controller;
 
 import com.mum.msm.config.JpaEntityManagerFactory;
+import com.mum.msm.daoImpl.AdvertisementDao;
 import com.mum.msm.daoImpl.UserDao;
 import com.mum.msm.hibernate.Util;
 import com.mum.msm.model.Advertisement;
@@ -54,6 +55,10 @@ public class LoginServlet extends HttpServlet {
                 theUser = users.get(i);
             }
         }
+
+        AdvertisementDao ad = new AdvertisementDao();
+        List<Advertisement> adds = ad.getAll();
+        session.setAttribute("adverts", adds);
 
         if (USERNAME.equals(username) && PASSWORD.equals(password)){
             response.setContentType("text/html");

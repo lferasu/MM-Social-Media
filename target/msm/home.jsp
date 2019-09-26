@@ -11,20 +11,6 @@
     <meta name="author" content="">
     <link rel="icon" href="mumsm/img/favicon.png">
     <title>MUM Social Media</title>
-    <!-- Bootstrap core CSS -->
-<%--    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
-<%--    <link href="mumsm/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>
-<%--    <link href="mumsm/assets/css/animate.min.css" rel="stylesheet">--%>
-<%--    <link href="mumsm/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">--%>
-<%--    <link href="mumsm/assets/css/timeline.css" rel="stylesheet">--%>
-<%--    <script src="mumsm/assets/js/jquery.1.11.1.min.js"></script>--%>
-<%--    <script src="mumsm/bootstrap-3.3.5/js/bootstrap.min.js"></script>--%>
-<%--    <script src="mumsm/assets/js/custom.js"></script>--%>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-
-<%--<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->--%>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
 
     <style>
         <%@ include file="mumsm/bootstrap-3.3.5/css/bootstrap.min.css"%>
@@ -51,10 +37,7 @@
 <h1>Hello mum</h1>
 <!-- Fixed NavBar-->
 <%@ include file="fixedNavbar.jsp"%>
-<!-- End of Fixed NavBar-->
 
-<%--<<<<<<< HEAD--%>
-<!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-principal">
     <div class="container">
         <div class="navbar-header">
@@ -129,23 +112,19 @@
 </nav>
 
 <div class="row text-center cover-container">
+
+<c:if test="${logggedInUser.userName != 'Admin'}">
   <a href="#" id="profile-info-container">
+  </a>
+</c:if>
 
+<c:if test="${logggedInUser.userName == 'Admin'}">
     <a href="#">
-<%--        <c:set var="directory" value="uploads\profile-pics\${logggedInUser.profilePicture}" />--%>
-<%--&lt;%&ndash;            <c:if test="${logggedInUser.profilePicture != null}">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <c:out value="<img src='${directory}'>" />&ndash;%&gt;--%>
-<%--        <c:out value="${directory}" />--%>
-<%--                 <img src='${directory}'>--%>
 
-<%--            </c:if>--%>
-<%--            <img src="logggedInUser.profilePicture">--%>
-<%--        </c:set>--%>
-<%--        <img src="${logggedInUser.profilePicture}">--%>
-<%--    <p style="background-color: red">username: ${logggedInUser.userName}</p>--%>
-<%--        <img src="mumsm/img/Friends/woman-1.jpg">--%>
-
+        <img src="mumsm/img/Friends/eden.jpg">
     </a>
+</c:if>
+   
 <!-- User name  display -->
     <div id="nameOfUser"></div>
 
