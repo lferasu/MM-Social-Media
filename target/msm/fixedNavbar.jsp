@@ -25,6 +25,7 @@
                 <li class="active"><a href="home.jsp">Home</a></li>
                 <li><a href="messages.jsp"><i></i></a></li>
                 <li><a href="edit_profile.jsp">Edit profile</a></li>
+                <li><a href="list_users.jsp">Users</a></li>
                 <li>
                     <form method="post" action="logout">
 

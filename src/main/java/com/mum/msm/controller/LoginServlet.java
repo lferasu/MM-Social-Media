@@ -31,19 +31,6 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out=response.getWriter();
         response.setContentType("text/html");
         HttpSession session = request.getSession();
-
-
-//        User user = new User();
-//        user.setFirstName("first names");
-//        user.setLastName("lastName");
-//
-//        UserDao ud = new UserDao();
-//        ud.save(user);
-//
-//        User returened = ud.get(1).orElse(null);
-//
-//        response.getWriter().write(returened.getFirstName());
-
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         User theUser = null;

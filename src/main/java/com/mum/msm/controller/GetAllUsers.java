@@ -23,6 +23,6 @@ public class GetAllUsers extends HttpServlet {
         List<User> listOfUsers = new UserDao().getAll();
         request.getSession().setAttribute("myListOfUsers",listOfUsers);
 
-//        response.getWriter().write(new Gson().toJson(listOfUsers));
+       response.getWriter().write(new Gson().toJson(listOfUsers));
     }
 }
