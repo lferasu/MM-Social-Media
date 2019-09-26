@@ -204,14 +204,9 @@
 </div><!-- end timeline content-->
 
 <!-- Adverst-->
-<%--    <c:if test="${session.getAttribute(\"logggedInUser\") == \"admin\"}" >--%>
-<div class="advert">
-    <h1>MUM Ads</h1>
-    <div>
-       <p><%= session.getAttribute("logggedInUser") %></p>
-    </div>
-</div><!-- Adverts-->
-<%--    </c:if>--%>
+
+    <%@ include file="advert.jsp"%><!-- Adverts-->
+
 
 <!-- Online users sidebar content-->
 <%--<div class="chat-sidebar focus">--%>
