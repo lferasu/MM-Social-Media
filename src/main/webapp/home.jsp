@@ -76,7 +76,6 @@
                 </div><!-- End Add Advertisement -->
     </c:if>
             </div><!-- end left content-->
-            <!-- right  content-->
             <div class="profile-info col-md-8  animated fadeInRight">
                 <div class="panel">
                     <form>
@@ -121,16 +120,8 @@
                             <p>This is a short description</p>
                         </div>
 
-<%--                    </div>--%>
-
                 </div>
-
-                <div class="panel panel-white post-load-more panel-shadow text-center">
-                    <button class="btn btn-info" id ="load-more">
-                        <i class="fa fa-refresh"></i>Load More...
-                    </button>
-                </div>
-            </div><!--end right  content-->
+            </div>
         </div>
     </div>
 </div><!-- end timeline content-->
@@ -140,9 +131,6 @@
     <%@ include file="advert.jsp"%>
 
     <!-- End of Adverts-->
-
-
-
 
 <footer class="welcome-footer">
     <div class="container">
