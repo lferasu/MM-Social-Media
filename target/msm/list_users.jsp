@@ -30,6 +30,7 @@
         <%@ include file="mumsm/assets/js/userInfoDisplay.js" %>
         <%@ include file="mumsm/assets/js/adverts.js" %>
         <%@ include file="mumsm/assets/js/home.js" %>
+        <%@ include file="mumsm/assets/js/list.js" %>
     </script>
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -108,7 +109,7 @@
         <div class="col-md-10  animated fadeInUp">
             <div class="widget">
                 <div class="table-responsive">
-                    <table class="table user-list">
+                    <table class="table user-list" id="list-of-users">
                         <thead>
                         <tr>
                             <th><span>User</span></th>
@@ -124,40 +125,34 @@
 <%--                            <h4><c:out value="${ads.text}" /></h4>--%>
 <%--                        </c:forEach>--%>
 <%--                <c:out value="${user.email}"></c:out>--%>
-                <c:forEach var="user" items="${myListOfUsers}">
-                    hallo
-                    <tr>
-                        <td>
-                            <img src="mumsm/img/Friends/guy-2.jpg" alt="">
-                            <a href="#" class="user-link"><c:out value="${user.firstName}" /></a>
-                        </td>
-
-
-                        <td>
-                            <a href="#"><c:out value="${user.email}" /></a>
-                        </td>
-                        <td style="width: 20%;">
-                            <a href="#" class="table-link success">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-										</span>
-                            </a>
-                            <a href="#" class="table-link">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-										</span>
-                            </a>
-                            <a href="#" class="table-link danger">
-										<span class="fa-stack">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-										</span>
-                            </a>
-                        </td>
-                    </tr>
-                </c:forEach>
+<%--                <c:forEach var="user" items="${myListOfUsers}">--%>
+<%--                    hallo--%>
+<%--                    <tr>--%>
+<%--                        <td>--%>
+<%--                            <button>   Blocked </button>--%>
+<%--                        </td>--%>
+<%--                        <td style="width: 20%;">--%>
+<%--                            <a href="#" class="table-link success">--%>
+<%--										<span class="fa-stack">--%>
+<%--											<i class="fa fa-square fa-stack-2x"></i>--%>
+<%--											<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>--%>
+<%--										</span>--%>
+<%--                            </a>--%>
+<%--                            <a href="#" class="table-link">--%>
+<%--										<span class="fa-stack">--%>
+<%--											<i class="fa fa-square fa-stack-2x"></i>--%>
+<%--											<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>--%>
+<%--										</span>--%>
+<%--                            </a>--%>
+<%--                            <a href="#" class="table-link danger">--%>
+<%--										<span class="fa-stack">--%>
+<%--											<i class="fa fa-square fa-stack-2x"></i>--%>
+<%--											<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>--%>
+<%--										</span>--%>
+<%--                            </a>--%>
+<%--                        </td>--%>
+<%--                    </tr>--%>
+<%--                </c:forEach>--%>
 
 
 

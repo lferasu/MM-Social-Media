@@ -34,7 +34,7 @@ public class LoginFilterServlet implements Filter {
 
             this.context.log("Unauthorized access to MUM Social");
             response.setContentType("text/html");
-            res.sendRedirect("/login");
+            res.sendRedirect("login.jsp");
         } else if(uri.contains("login") || uri.contains("registration")){
 
             RequestDispatcher rd = req.getRequestDispatcher("/loginServlet");

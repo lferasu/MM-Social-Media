@@ -30,9 +30,11 @@
         <%@ include file="mumsm/assets/js/home-made.js" %>
         <%@ include file="mumsm/assets/js/post.js" %>
         <%@ include file="mumsm/assets/js/userInfoDisplay.js" %>
-        <%@ include file="mumsm/assets/js/adverts.js" %>
         <%@ include file="mumsm/assets/js/home.js" %>
+        <%@ include file="mumsm/assets/js/profile.js" %>
+        <%@ include file="mumsm/assets/js/adverts.js" %>
     </script>
+
 
 
 </head>
@@ -70,45 +72,39 @@
                 <%@ include file="weather.jsp"%>
 
                 <!-- Add Advertisement -->
-    <c:if test="${logggedInUser.userName == 'Admin'}">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Add Advert</h3>
+                <c:if test="${logggedInUser.userName == 'Admin'}">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Add Advert</h3>
 
-                        <form>
-                            <textarea placeholder="Your Adds Here" id = "ad-text" rows="2" class="form-control input-lg p-text-area" name="adds"></textarea>
-                        </form>
-                        <button class="btn btn-info pull-right" id ="ad-button">Post</button>
+                            <form>
+                                <textarea placeholder="Your Adds Here" id = "ad-text" rows="2" class="form-control input-lg p-text-area" name="adds"></textarea>
+                            </form>
+                            <button class="btn btn-info pull-right" id ="ad-button">Post</button>
 
-                    </div>
-                    <div class="panel-body" id="adverts" style="background-color: #D9EDF7">
+                        </div>
+                        <div class="panel-body" id="adverts" style="background-color: #D9EDF7">
 
-                    </div>
-                </div><!-- End Add Advertisement -->
-    </c:if>
+                        </div>
+                    </div><!-- End Add Advertisement -->
+                </c:if>
             </div><!-- end left content-->
             <div class="profile-info col-md-8  animated fadeInRight">
                 <div class="panel">
-                    <form>
+                    <form enctype="multipart/form-data">
                         <textarea placeholder="Whats in your mind today?" id = "post-text" rows="2" class="form-control input-lg p-text-area"></textarea>
+
+                        <div class="panel-footer">
+                            <button class="btn btn-info pull-right" id ="post-button">Post</button>
+                            <div id="image-frame">
+                                <img src="" id="profile-img-tag" width="200px" />
+                            </div>
+                            <div id ="image-select">
+                                <input type="file"  name="file" id="profile-img">
+                            </div>
+
+                        </div>
                     </form>
-                    <div class="panel-footer">
-                        <button class="btn btn-info pull-right" id ="post-button">Post</button>
-                        <ul class="nav nav-pills">
-                            <li>
-                                <a href="#"><i class="fa fa-map-marker"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-camera"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class=" fa fa-film"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-microphone"></i></a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 <!-- first post-->
                 <div id="posts">

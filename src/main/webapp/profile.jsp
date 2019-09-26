@@ -84,28 +84,28 @@
                     </div>
                     </form>
                 </div>
-                <!-- first post-->
-                <div id="posts">
-                    <div class="panel panel-white post panel-shadow post-container" >
-                        <div class="post-heading">
-                            <div class="pull-left image">
-                                <img src="mumsm/img/Friends/guy-2.jpg" class="avatar" alt="user profile image">
-                            </div>
-                            <div class="pull-left meta">
-                                <div class="title h5">
-                                    <a href="#" class="post-user-name">Omarion welkdic</a>
-                                    uploaded a photo.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-image">
-                            <img src="mumsm/img/Post/game.jpg" class="image show-in-modal" alt="image post">
-                        </div>
-                        <div class="post-description">
-                            <p>This is a short description</p>
-                        </div>
+<%--                <!-- first post-->--%>
+<%--                <div id="posts">--%>
+<%--                    <div class="panel panel-white post panel-shadow post-container" >--%>
+<%--                        <div class="post-heading">--%>
+<%--                            <div class="pull-left image">--%>
+<%--                                <img src="mumsm/img/Friends/guy-2.jpg" class="avatar" alt="user profile image">--%>
+<%--                            </div>--%>
+<%--                            <div class="pull-left meta">--%>
+<%--                                <div class="title h5">--%>
+<%--                                    <a href="#" class="post-user-name">Omarion welkdic</a>--%>
+<%--                                    uploaded a photo.--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                        </div>--%>
+<%--                        <div class="post-image">--%>
+<%--                            <img src="mumsm/img/Post/game.jpg" class="image show-in-modal" alt="image post">--%>
+<%--                        </div>--%>
+<%--                        <div class="post-description">--%>
+<%--                            <p>This is a short description</p>--%>
+<%--                        </div>--%>
 
-<%--                    </div>--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
 
                 </div>
 
