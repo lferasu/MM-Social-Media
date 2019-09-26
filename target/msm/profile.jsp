@@ -9,8 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" href="mumsm/img/favicon.png">
-    <title>Mum Social Media</title>
+
+    <link rel="icon" href="/mumsm/img/favicon.png">
+    <title>Home - MUM Social</title>
 
     <!-- Bootstrap core CSS -->
 <%--    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">--%>

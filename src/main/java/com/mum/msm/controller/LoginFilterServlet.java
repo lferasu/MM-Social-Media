@@ -36,32 +36,18 @@ public class LoginFilterServlet implements Filter {
             response.setContentType("text/html");
             res.sendRedirect("/login");
         } else if(uri.contains("login") || uri.contains("registration")){
+
             RequestDispatcher rd = req.getRequestDispatcher("/loginServlet");
             rd.forward(req, res);
 
 //            response.setContentType("text/html");
 //            res.sendRedirect("home.jsp");
+
         }
 
         else {
             chain.doFilter(request, response);
         }
-
-
-//        PrintWriter out=response.getWriter();
-//
-//        String password=request.getParameter("password");
-//        if(password.equals("admin")){
-//            chain.doFilter(request, response);
-//
-//        }
-//        else{
-//            out.print("username or password error!");
-//            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-//            rd.include(request, response);
-//        }
-
-
 
     }
 }

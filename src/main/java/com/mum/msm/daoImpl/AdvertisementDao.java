@@ -23,8 +23,6 @@ public class AdvertisementDao implements Dao<Advertisement> {
                 new Class[]{ Advertisement.class}).getEntityManager();
     }
 
-
-
     @Override
     public Optional<Advertisement> get(long id) {
         return Optional.ofNullable(entityManager.find(Advertisement.class, id));

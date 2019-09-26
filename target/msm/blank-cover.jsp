@@ -97,9 +97,6 @@
 </div>
 
 
-
-
-
 <!-- Timeline content -->
 <div class="container" style="margin-top:2px;">
     <div class="profile-info col-md-10">

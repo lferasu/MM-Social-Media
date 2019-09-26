@@ -5,6 +5,7 @@ import com.mum.msm.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,11 +31,14 @@ public class RegisterServlet extends HttpServlet {
         boolean validate = false;
         // check if the username is taken
         List<User> newUser = userDao.findWithUserName(userName);
-        if(newUser.size()==0)
-        {
+        if(newUser.size()==0){
             User user = new User(email, userName,password);
-           userDao.save(user);
+            userDao.save(user);
+            Cookie users = new Cookie("user", userName);
+            response.addCookie(users);
+            response.sendRedirect("edit_profile.jsp");
         }
+
     }
 
 
